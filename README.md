@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# **Education**
 
-You can use the [editor on GitHub](https://github.com/sromanowski12/education/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## **Courses**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### **[CHEM-N190](/n190)**
 
-### Markdown
+- [About](/n190/about.md)
+- **[Assignments](/n190/assignments)**
+- **[Notes](/n190/notes)**
+  - [Ch1 Notes](/n190/notes/ch1-notes.md)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### **[INFO-I303](/i303)**
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sromanowski12/education/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [About](/i303/about.md)
+- **[Assignments](/i303/assignments)**
+  - [Friedman Discussion](/i303/assignments/friedman-discussion.md)
+- **[Notes](/i303/notes)**
+  - [Appendix A - Notes](/i303/notes/appendixA-notes.md)
+  - [Week 1 - Notes](/i303/notes/week1-notes.md)
+  - [Ch. 2 - Notes](i303/notes/ch2-notes.md)
+-
