@@ -3,20 +3,26 @@
 **Results:** 11.42/14
 
 1. Which of the following statements are examples of structured or operational level decisions? (Check all that apply)
-   [x] reordering inventory,
-   [x] creating employee weekly staffing schedule
-   [x] creating employee weekly production schedule
-1. Which of the following statements are examples of semistructured or managerial level decisions? (Check all that apply)
-   [x] analyzing the impact of last month's marketing campaign
-   [x] comparing expected sales and actual sales by month
-1. Todd Haitz works at a retail store selling sports equipment. His daily tasks include opening the store, creating the work schedules, processing payroll, overseeing sales and inventory, and training employees. At what level of the organizational pyramid would you categorize Todd?
+
+- [x] reordering inventory
+- [x] creating employee weekly staffing schedule
+- [x] creating employee weekly production schedule
+
+2. Which of the following statements are examples of semistructured or managerial level decisions? (Check all that apply)
+
+- [x] analyzing the impact of last month's marketing campaign
+- [x] comparing expected sales and actual sales by month
+
+3. Todd Haitz works at a retail store selling sports equipment. His daily tasks include opening the store, creating the work schedules, processing payroll, overseeing sales and inventory, and training employees. At what level of the organizational pyramid would you categorize Todd?
 
 - operational
 
 4. Which of the following are examples of critical success factors? (Check all that apply)
-   [x] increase customer satisfaction
-   [x] retain competitive advantages
-   [x] hire and retain the best business professionals
+
+- [x] increase customer satisfaction
+- [x] retain competitive advantages
+- [x] hire and retain the best business professionals
+
 5. What types of metrics measure customer satisfaction?
 
 - effectiveness MIS metrics
@@ -51,7 +57,7 @@
 
 13. \_\_\_ includes the tasks, activities, and responsibilities required to execute each step in a business process.
 
-- Workflow
+- [x] - Workflow
 
 14. What are managerial business processes?
 
