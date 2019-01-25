@@ -109,3 +109,16 @@
 ### **Types of Utility Software**:
 
 ![](images/utility-software.png)
+
+### **Types of Application Software**:
+
+![](images/application-software.png)
+
+- **Distributing Application Software**:
+Single user license—restricts the use of the software to one user at a time.
+
+Network user license—enables anyone on the network to install and use the software.
+
+Site license—enables any qualified users within the organization to install the software, regardless of whether the computer is on a network. Some employees might install the software on a home computer for working remotely.
+
+Application service provider license—specialty software paid for on a license basis or per-use basis or usage-based licensing.
