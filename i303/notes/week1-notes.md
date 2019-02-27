@@ -1,3 +1,8 @@
+---
+post_title: 'Week 1 - Notes'
+layout: post_type_probably_post
+published: true_or_false
+---
 [Knowledge Worker Assignment](https://iu.instructure.com/courses/1792645/assignments/9043530?module_item_id=18278766)
 
 **Learning Objectives**
