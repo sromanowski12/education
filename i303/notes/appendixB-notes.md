@@ -1,0 +1,25 @@
+## **Appendix B: Networks and Telecommunication**
+- **Telecommunication Systems**: enable the transmission of data over public or private networks
+- **Network**: a communications system created by linking two or more devices and establishing a standard methodology by which they can communicate
+- **Local Area Network (LAN)**: designed to connect a group of computers in proximity to each other such as in an office building, a school, or a home
+- **Wide Area Network (WAN)**: spans a large geographic area, such as a state, province, or country
+- **Metropolitan Area Network (MAN)**: a large computer network usually spanning a city
+- A network typically includes four things (besides the computers themselves):
+  - **Protocol**: a set of communication rules to make sure that everyone speaks the same language
+  - **Network Interface Card (NIC)**: card that plugs into the back (or side) of your computers and lets them send and receive messages from other computers
+  - **Cable**: the medium to connect all of the computers
+  - **Hub (Switch or Router)**: hardware to perform traffic control
+- Networks are differentiated by the following:
+  - Architecture—peer-to-peer, client/server
+  - Topology—bus, star, ring, hybrid, wireless.
+  - Protocols—Ethernet, transmission control protocol/Internet protocol (TCP/IP).
+  - Media—coaxial, twisted-pair, fiber-optic.
+- **Peer-to-Peer (P2P) Networks**: a computer network that relies on the computing power and bandwidth of the participants in the network rather than a centralized server
+- **Client**: a computer designed to request information from a server
+- **Server**: a computer dedicated to providing information in response to requests
+- **Client/Server Network**: a model for applications in which the bulk of the back-end processing, such as performing a physical search of a database, takes place on a server, while the front-end processing, which involves communicating with the ysers, is handled by the clients
+- **Network Operating System (NOS)**: the operating system that runs a network, steering information between computers and managing security and users
+- **Packet Switching**:
+- **Router**:
+- **Network Topology**:
+- 

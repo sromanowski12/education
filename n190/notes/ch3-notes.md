@@ -1,0 +1,48 @@
+# **Ch. 3: The Chemistry of Global Climate Change**
+## **In the Greenhouse: Earth's Enerygy Balance**
+- Global Climate Change
+- The Earth receives nearly all of its energy from the Sun primarily in the form of ultraviolet, visible, and infrared radiation.
+- **Greenhouse Effect**: the natural process by which atmospheric gases trap a major portion(about 80%) of the infared radiation by the Earth
+- **Greenhouse Gases**: gases capable of absorbing and emitting infared radiation, thereby warming the atmosphere.
+  - Carbon dioxide
+  - Water vapor
+  - Methane
+  - Nitrous oxide
+  - Ozone
+  - Chlorofluorocarbons
+- The presence of those gases is essential in keeping our planet at habitable temperatures
+- The exchange of energy between the Earth, atmosphere, and space results in a steady state and a continuous average temperature of the Earth. 
+- The increase in concentration of greenhouse gases that is taking place today is changing the energy balance and causing increased warming of the planet
+- **Enhanced Greenhouse Effect**: the process in which atmospheric gases trap and return more than 80% of the heat energy radiated by the Earth
+- **Global Warming**: describes the increase in average global temperature that results from an enhanced greenhouse effect
+- **Anthropogenic**: influences on the environment which stem from human activities such as industry, transportation, mining, and agriculture
+  - These activities require carbon-based fuels, which produce carbon dioxide when burned
+## **Gathering Evidence: The Testimony of Time**
+- **Fossil Fuels**: combustible substances, of which coal, petroleum and natural gas are the most common
+- Beginning about 1750, carbon dioxide began accumulating in the atmosphere at an ever-increasing rate, corresponding to the beginning of the Industrial Revolution and the accompanying combustion of fossil fuels that powered that transformation
+## **Molecules: How They Shape Up**
+- Opposite charges attract and like charge repel. Negatively charged electrons are attracted to positively charged nucleus. 
+- However the electrons all have the same charge and therefore are found as far from eachother in space as possible while stil maintaining their attraction to the positively charged nucleus.
+- **Procedure for Predicting the Shape of a Molecule**
+  - Determine the number of outer electrons associated with each atom in the molecule
+  - Arrange the outer electrons in pairs to satisfy the octet rule
+  - Assume that the most stable molecular shape has the bonding electron pairs as far apart as possible
+- Molecules are represented in different ways
+  - Chemical formula, the simplest way
+  - Lewis structure
+- In some molecules, the central atom has nonbonding electron pairs, also called **lone pairs**
+  - A nonbonding electron pair effectively occupies greater space than a bonding pair of electrons. 
+  - Consequently, the nonbonding pair repels the bonding pairs somewhat more strongly than the bonding pairs repel one another.
+  - This stronger repulsion forces the bonding pairs closer to one another
+- The shape of a molecule is described in terms of its arrangement of atoms, not electrons
+![](images/table3-1.png)
+## **Vibrating Molecules and the Greenhouse Effect**
+- How do greenhouse gases trap heat?
+  - how molecules respond to photons of energy
+## **The Carbon Cycle**
+## **Quantitative Concepts: Mass**
+## **Quantitative Concepts: Molecules and Moles**
+## **Methane and Other Greenhouse Gases**
+## **How Warm Will the Planet Get?**
+## **The Consequence of Climate Change**
+## **What Can (or Should) we Do About Climate Change?**

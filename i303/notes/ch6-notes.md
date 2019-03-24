@@ -5,3 +5,101 @@
   - Information Timeliness
   - Information Quality
   - Information Governance
+## **Information Type**
+- **Two Primary Types of Information**:
+  - Transactional Information: all of the information contained within a single business process or unit of work
+    - Primary purpose is to support daily operational tasks
+  - Analytical Information: all organizational information
+    - Primary purpose is to support the performance of managerial analysis tasks
+## **Information Timeliness**
+- Real-Time Information: immmediate, up-to-date information
+- Real-Time Systems: provides real-time information in response to requests
+## **Information Quality**
+- Information Inconsistency: when the same data element has different values
+- Information Integrity Issues: when a system produces incorrect, inconsistent, or duplicate data
+- **Five Common Characteristics of High-Quality Information**:
+  - Accurate
+  - Complete
+  - Consistent
+  - Timely
+  - Unique
+- **Costs of Using Low-Quality Information**:
+  - Inability to track customers accurately.
+  - Difficulty identifying the organization's most valuable customers.
+  - Inability to identify selling opportunities.
+  - Lost revenue opportunities from marketing to nonexistent customers.
+  - The cost of sending undeliverable mail.
+  - Difficulty tracking revenue because of inaccurate invoices.
+  - Inability to build strong relationships with customers.
+## **Information Governance**
+- Data Governance: the overall management of the availability, usability, integrity, and security of company data
+- Master Data Management (MDM): the practice of gathering data and ensuring that it is uniform, accurate, consistent, and complete
+## **Storing Information Using a Relational Database Management System**
+- Database: maintains information about various types of objects (inventory), events (transactions), people (employees), and places (warehouses)
+- Database Management System (DBMS): creates, reads, updates, and deletes data in a database while controlling access and security. Managers send requests to the DBMS, and the DBMS performs the actual manipulation of the data in the database
+- Query-by-Example: tool that helps uses graphically design the answer to a question against a database
+- Structured Query Language (SQL): asks users to write lines of code to answer questions against a database
+- Data Element (Data Field): the smallest or basic unit of information
+- Data Models: logical data structures that detail the relationships among data elements by using graphics or pictures
+- Metadata: provides detail about data
+  - Ex. image - size, resolution, and date created; text document: document length, date created, author's name, and summary
+- Data Dictionary: compiles all of the metadata about the data elements in the data model
+- Relational Database Model: stores information in the form of logically related two-dimensional tables
+- Relational Database Management System: allows users to create, read, update, and delete data in a relational database. Although the hierarchical and network models are important, this text focuses only on the relational database mode
+- Entity (Table): stores information about a person, place, thing, transaction, or event. They are entities, or tables, of interest
+- Attributes (Columns or Fields): the data elements associated with an entity
+- Record: a collection of related data elements
+- Primary Key: a field (or group of fields) that uniquely identifies a given record in a table
+- Foreign Key: a primary key of one table that appears as an attribute in another table and acts to provide a logical relationship between two tables
+- Physical View of Information: dealds with the physical storage of information on a storage device
+- Logical View of Information: focuses on how individual users logically access information to meet their ow particular business needs
+- Information Redundancy: the duplication of data, or the storage of the same data in multiple places
+- Information Integrity: a measure  of the quality of information
+- Integrity Constraints: rules that help ensure the quality of information
+- Relational Integrity Constraints: rules that enforce basic and fundamental information-based constraints
+- Business Rule: defines how a company performs certain aspects of its business and typically results in either a yes/no or true/false answer
+- Business-Crtical Integrity Constraints: enforce business rules vital to an organization's success and often require more insight and knowledge than relational integrity constraints. 
+  - Business-critical integrity constraints tend to mirror the very rules by which an organization achieves success.
+## **Driving Websites with Data**
+- Content Creator: the person responsible for creating the original website content
+- Content Editor: the person responsible for updating and maintaining website content
+- Static Informaiton: fixed data incapable of change in the event of a user action
+- Dynamic Information: data that changes based on user actions
+- Dynamic Catalog: an area of a website that stores information about products in a database
+- Data-Driven Website: an interactive website kept constantly updated and relevant to the needs of its customers using a database
+- **Data-Driven Website Advantages**:
+  - Easy to manage content
+  - Easy to store large amounts of data
+  - Easy to eliminate human errors
+- Data Warehouse: a logical collection of information, gathered from many operational databases that support business analysis activites and decision-making tasks
+- **Three Core Concepts of Data Warehousing**:
+  - Data Mart
+  - Information Cleasing or Scrubbing
+  - Data Mining
+- Extraction, Transformation, & Loading (ETL): a process that extracts information from internal and external databases, transforms it using a common set of enterprise definitions, and loads it into a data warehouse. The data warehouse then sends portions (or subsets) of the information to data marts
+- Data Mart: contains a subset of data warehouse information
+- Information Cube: the common term for the representation of multidimensional information
+- Dirty Data: erroneous or flawed data
+- Information Cleansing or Scrubbing: a process that weeds out and fixes or discards inconsistent, incorrect, or incomplete information
+- Data Quality Audits: determine the accuracy and completeness ofits data. Most organizations determine a percentage of accuracy and completeness high enough to make good decisions at a reasonable cost, such as 85 percent accurate and 65 percent complete.
+- Data Mining: the proces of analyzing data to extract information not offered by the raw data alone
+- Data-Mining Tools: use a variety of techniques to find patterns and relationships in large volumes of information that predict future behavior and guide decision making
+- Structured Data: has a defined length, type, and format and includes numbers, dates, or strings such as Customer Address. Structured data is typically stored in a traditional system such as a relational database or spreadsheet and accounts for about 20 percent of the data that surrounds us.
+  - Machine-Generated Data: created by a machine without human intervention. Machine-generated structured data includes sensor data, point-of-sale data, and web log (blog) data.
+  - Human-Generated Data: data that humans, in interaction with computers, generate. Human-generated structured data includes input data, click-stream data, or gaming data.
+- Unstructured Data:
+- Big Data: a collection of large, complex data sets, including structured and unstructured data, which cannot be analyzed using traditional database methods and tools
+- **Four Common Characteristics of Big Data**
+  - Variety
+  - Veracity
+  - Volume
+  - Velocity
+- Distributed Computing: processes and manages algorithms across many machines in a computing environment
+- Advanced Anlysis: focuses on forecasting future trends and producing insights using sophisticated quantitative methods, including statistics, descriptive and predictive data mining, simulation, and optimization.
+- Data Scientist: extracts knowledge from data by performing statistical analysis, data mining, and advanced analytics on big data to identify trends, market changes, and other relevant information.
+- Infographics: present the results of data analysis, displaying the patterns, relationships, and trends in a graphical format
+- Advanced Paralysis: occurs when the user goes into an emotional state of over-analysis (or over-thinking) a situation so that a decision or action is never taken, in effect paralyzing the outcome.
+- Data Visualization: describes technologies that allow users to see or visualize data to transform information into a business perspective.
+- Data Visualization Tools:
+- Business Intelligence Dashboards: track corporate metrics such as critical success factors and key performance indicators and include advanced capabilities such as interactive controls, allowing users to manipulate data for analysis
+- Data Artist
