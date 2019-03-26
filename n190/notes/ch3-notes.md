@@ -39,9 +39,31 @@
 ## **Vibrating Molecules and the Greenhouse Effect**
 - How do greenhouse gases trap heat?
   - how molecules respond to photons of energy
+    - UV-C (high-energy photons) break the covalent bonds in Ozone
+    - UV-B (low-energy photons) break the bonds of oxygen
+- Water is by far the most important gas in maintaining the Earth's temperature, followed by carbon dioxide
+- Methane, nitrous oxide, ozone, and chlorofluorocarbons (such as $CCl_3F$) are among the other substances that help retain planetary heat.
+- Highly energetic photons with high frequencies and short wavelengths (such as UV radiation) can break bonds within molecules. The less energetic photons (such as IR radiation) cause an increase in molecular vibration
+- Another response of molecules to radiant energy is that longer wavelengths than those in the IR range have only enough energy to cause molecules to rotate faster.
+  - For example, microwave ovens generate electromagnetic radiation that causes water molecules to spin faster
 ## **The Carbon Cycle**
+1. Carbon is found in many places called resevoirs ex. atmosphere, rocks, plants & animals
+2. Carbon moves from one resevoir to another ex. photosynthesis, combustion, sedimentation
+3. Where carbon ends up ex. important for the benefit of humans today and in the future
+- Respiration adds carbon dioxide to the atmosphere, and photosynthesis removes it. Similarly, the oceans both absorb and emit carbon dioxide
+-  Widespread burning of coal for electricity production, of petroleum products for transportation, and of natural gas for home heating all transfer carbon from the largest underground carbon reservoir into the atmosphere.
+
+
 ## **Quantitative Concepts: Mass**
+- **Atmoic Mass**: the mass (in grams) of the same number of atoms that are found in exactly 12 g of carbon-12
+- **Avogadro's Number**: the number of atoms in exactly 12 g of C-12. Avogadro's number, if written out, is 602,000,000,000,000,000,000,000. It is more compactly written in scientific notation as 6.02 × $10^23$
+- **To Find Average Mass**
+  - Mass of Atom/Avogadro's Number (6.02 x $10^23$)
+  - Ex. Oxygen 16.00 grams
+    16.00 g/6.02 x $10^23$ oxygen atoms = 2.66 x $10^-23$ g oxygen/oxygen atom
+
 ## **Quantitative Concepts: Molecules and Moles**
+
 ## **Methane and Other Greenhouse Gases**
 ## **How Warm Will the Planet Get?**
 ## **The Consequence of Climate Change**
