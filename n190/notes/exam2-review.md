@@ -3,21 +3,21 @@
 ### **Areas of Focus**
 - [ ] Ch. 2
   - [ ] **Electromagnetic Spectrum*
-- [ ] Ch. 3
+- [X] Ch. 3
   - [X] *Balancing Equations*
   - [X] *Molecular Geometry*
   - [X] *ABE Patterns*
-  - [ ] *EM Radiation Impact on Molecules*
-  - [ ] *Ionic & Covalent Bonding*
+  - [X] *EM Radiation Impact on Molecules*
+  - [X] *Ionic & Covalent Bonding*
   - [X] *Calculating Moles & Molar Masses*
   - [X] *Chemical Bonds w/ Greatest Global Warming Potential*
-- [ ] Ch. 4
-  - [ ] *Energy in Reactions*
-  - [ ] *Endo and Exothermic Reactions*
-  - [ ] *Hydrocarbons*
-  - [ ] *Distallation of Crude Oil*
-  - [ ] *Catalyzed Reactions*
-  - [ ] *Biofuels*
+- [X] Ch. 4
+  - [X] *Energy in Reactions*
+  - [X] *Endo and Exothermic Reactions*
+  - [X] *Hydrocarbons*
+  - [X] *Distallation of Crude Oil*
+  - [X] *Catalyzed Reactions*
+  - [X] *Biofuels*
 ---
 # **Ch. 2: Protecting the Ozone Layer**
 - **Precautionary Principle**: stresses the wisdom of acting, even in the absence of complete scientific data, before the adverse effects on human health or the environment become significant or irrevocable
