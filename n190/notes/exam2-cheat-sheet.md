@@ -1,0 +1,27 @@
+- **Covalent Bond**: refers to two electrons that are shared. Covalent implies "shared strength"
+- **Single Covalent Bond**: when two electrons (one pair) are shared between two atoms
+- **Double Bond**: a covalent bond consisting of two pairs of shared electrons
+- **Triple Bond**: a covalent linkage made up of three pairs of shared electrons
+- Whether two atoms can form a covalent bond depends upon their electronegativity i.e. the power of an atom in a molecule to attract electrons to itself. If two atoms differ considerably in their electronegativity - as sodium and chloride do - then one of the atoms will lose its electron to the other atom. This results in a positively charged ion (cation) and negatively charged ion (anion). The bond between these two ions is called an **ionic bond**.
+- 
+- **Mole (mol)**: defined as containing an Avogadro's number of objects
+  - Ex. 1 mol of carbon aroms consists of 6 x $10^23$ C atoms
+- **Molar Mass**: the mass of Avogadro's number, or one mole, of whatever particles specified
+  - Ex. a mole of Oxygen atoms has 16.0 g
+- **Calculating Moles & Molar Mass**
+  - Mole-to-Mass
+    - Mass = # of Moles * Molar Mass
+    - Ex. 1 mole of CO^2
+      - C - 12.0 g
+      - O - 16.0 g
+      - Molar Mass = (1 * 12.0)+(2 * 16.0)
+        - = 44.0 g
+    - Ex. 3 moles of CO^2
+      - = 44.0 * 3
+      - = 132.0 g
+  - Mass-to-Moles
+    - # of Moles = Mass/Molar Mass
+    - Ex. # of moles of Al present in 108 g of the element
+      - Al - 27 g
+      - # of Moles = 108/27
+        - = 4 moles
