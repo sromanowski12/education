@@ -72,4 +72,15 @@
 ### **Ch. 4: Energy, Chemistry, and Society**
 ### **Ch. 5: The Water We Drink**
 ### **Ch. 6: Neutralizing Acid Rain**
+- Chemical Properties of Acid ...
+- **Acid**: a compound that releases hydrogen ions in aqueous solution
+- **Strong Acid**: an acid that dissociates completley in aqueous solution
+- **Weak Acid**: an acid that dissociates only to a small extent in aqueous solution
+- **Base**: a compound that release hydroxide ions in aqueous solution
+  - bases generally taste bitter and do not lend an appealing flavor to foods
+  - Aqueous solutions of bases have a slippery, soapy feel
+  - Common examples of bases include household ammonia (an aqueous solution) and lye
+- **Strong Base**: bases that dissociate completely in water
+  - Ex. NaOH - Lye
+- **Weak Base**: a base that dissociates only to a small extent in aqueous solution
 ### **Ch. 7: Nuclear Chemistry**
