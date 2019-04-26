@@ -72,7 +72,6 @@
 ### **Ch. 4: Energy, Chemistry, and Society**
 ### **Ch. 5: The Water We Drink**
 ### **Ch. 6: Neutralizing Acid Rain**
-- Chemical Properties of Acid ...
 - **Acid**: a compound that releases hydrogen ions in aqueous solution
 - **Strong Acid**: an acid that dissociates completley in aqueous solution
 - **Weak Acid**: an acid that dissociates only to a small extent in aqueous solution
@@ -83,4 +82,12 @@
 - **Strong Base**: bases that dissociate completely in water
   - Ex. NaOH - Lye
 - **Weak Base**: a base that dissociates only to a small extent in aqueous solution
+**Reaction of Mixed Acids and Bases**
+- **Neutralization Reaction**: a chemical reaction in which the hydrogen ions from an acid combine with the hydroxide ions from a base to form water molecules
+- **Neutral Solution**: neither acidic nor basic
+- **pH**: "power of hydrogen", (0 - 14) indicates the acidity of a solution
+  - pH7: Neutral
+  - > pH7: Bases
+  - < pH7: Acids
+- **Ocean Acidification**: the lowering of the ocean pH due to increased atmospheric carbon dioxide
 ### **Ch. 7: Nuclear Chemistry**
