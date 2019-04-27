@@ -169,21 +169,39 @@ Cl - Chlorine, 17 electrons & 17 protons (7 valence electrons)
 #### **Solutions**
 - Dissociation to form ions in solution
   - Ex. Sodium Chloride - NaCl
-- Precipiation reactions (ppt) are double replacement reactions
+- Precipiation reactions (ppt) are **double replacement reactions**
+  - Ex. $AgNO_3(aq) + NaCl(aq) -> AgCl(s) + NaNO_3(aq)$
+    - Silver Nitrate Disscoiates to $Ag^+ + NO_3^-$
+    - Sodium Chloride Splits Into $Na^+ + Cl^-$
+    - Sodium Nitrate Remains as $Na^+ + NO_3^-$
 - **Solubility Guidelines**:
-1. Alkali Metals
-2. 
-
+1. Alkali Metals and $NH_4^+$ are **Soluble**
+2. Compounds Containing Nitrate Ions, $NO_3^-$ are **Soluble**
+3. Most Compounds Containing Chloride Ions $Cl^-$ are **Soluble**
+4. Most Compounds Containing Sulfate Ions $SO_4^2-$ are **Soluble**
+5. Most Compounds Containing Carbonate Ions $Co_3^2-$ and Phosphate Ions $PO_4^-3$ are **Not Soluble**
+6. Most Compounds Containing Sulfide Ions $S^2-$ are **Not Soluble**
+- **Net Ionic Equations**
+  - Ex. $AgNO_3(aq) + NaCl(aq) -> AgCl(s) + NaNO_3(aq)$
+  - Net Ionic Equation
+    $Ag^+(aq) + Cl^-(aq) -> AgCl(s)$
 - **Ionization**: a molecule with polar covalent bonds that is split into ions as it dissolves
   - Ex. Hyrodgen Chloride - HCl
+    $HCl(g) -> H^+(aq) + Cl^-(aq)$
 - Electrolytes
-  - Strong Electrolytes
+  - **Strong Electrolytes**: solute is mostly ions
     - Ex. NaCl, HCl
-  - Weak Electrolytes
+  - **Weak Electrolytes**: only a few ions form when the compound dissolves
     - Ex. Vinegar
-  - Nonelectrolytes
+  - **Nonelectrolytes**: solute is soluble but no ions form
     - Ex. Sugar
 - Colligative Properties
+  - Solutions Formed by Dissolving Non-Volatile Solutes Have Lower Vapor Pressure
+  - Ex. Sugar Solutions like Soft Drinks
+- The Freezing Point is Lower for SOlutions
+  - Ex. Salt on roads in the winter
+- The Boiling Point is Higher for Solutions
+  - Ex. Cooking spaghetti
 
 #### **Names & Formulas of Ionic Compounds**
 *Naming*
