@@ -109,7 +109,7 @@ $H_2O$
 
 - **Electronegativity**: a measure of the attraction of an atom for an electron in a chemical bond
   - Scale - 0.7 to 4.0
-  - **The greater the electronegativity, the more an atom attratcs the electrons in a chemical bond toward itself**
+  - **The greater the electronegativity, the more an atom attracts the electrons in a chemical bond toward itself**
   - **The greater the difference in electronegativity between two bonded atoms, the more polar the bond is**
   - *Electronegativity values used to estimate bond polarities*
 - **Polar Covalent Bond**: a covalent bond in which the electrons are not equally shared but rather are closer to the more electronegative atom
