@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+Name:			Seth Romanowski
+Course:			Web Programming
+Assignment:		Assignment #2
+Semester:		Summer, 2019
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="name" content="Seth Romanowski">
+<meta name="course" content="CSCI-A 340">
+<meta name="assignment" content="Assignment #1">
+<meta name="semester" content="Summer, 2019">
+<meta name="keywords" content="JavaScript, Web Programming, Canvas Graphics, Event Handling">
+
+<title>PictureView</title>
+<script type="text/javascript">
+//---------------------------------------------------------------------------------------------------------
+function displayThumbnail()
+{
+	var myFiles = document.getElementById("files");
+	var pic = document.getElementById("thumbnail");
+	var HTML = "";
+	var imgCount = 1;
+	
+	var numCol = myFiles.files.length / 4;
+
+	var numRow = myFiles.files.length / 4;
+
+	HTML = "<br />";
+	HTML = HTML + "<table>";
+	
+	for(var i = 0; i < 20; i++)
+	{
+		HTML = HTML + "<tr>";
+		for(var j = 0; j < 4; j++)
+		{
+			if(imgCount <= myFiles.files.length)
+			{
+			HTML = HTML + "<td onclick='displayContent(" + imgCount + ")'>";
+			
+			HTML = HTML + "<img src='/img/slide";
+			HTML = HTML + imgCount;
+			HTML = HTML + ".png' width='35' height='35'>";
+			
+			HTML = HTML + "</td>";
+			}
+			imgCount++;
+		}
+
+		HTML = HTML + "</tr>";
+	}
+
+	HTML = HTML + "</table>";
+	pic.innerHTML = HTML;
+}
+//---------------------------------------------------------------------------------------------------------
+function displayContent(img)
+{
+
+	var pic = document.getElementById("filePreview");
+	pic.innerHTML = "<center><img src='/img/slide" + img + ".png' width='500' height='480'></center><b>File Path:</b> /img/slide" + img + ".png"; 
+
+}
+</script>
+<!----------------------------------------------------Header----------------------------------------------------->
+</head>
+<body>
+<div id="container">
+
+<div id="bar"
+	style="width:900px;
+	height:5px;
+	background-color:black;">
+</div>
+<div id="heading"
+	style="width:900px;
+	height:150px;
+	background-color:orange;">
+
+<br /><br /><br />
+
+<center>
+<h1>PictureView &reg</h1>
+</center>
+
+</div>
+
+<div id="bar"
+	style="width:900px;
+	height:5px;
+	background-color:black;">
+</div>
+<!----------------------------------------------------Left Nav----------------------------------------------------->
+<div id="left"
+	style="width:200px;
+	height:500px;
+	background-color:yellow;
+	float:left;">
+
+<br />
+<input id="files" type="file" name="files[]" multiple />
+
+<button onclick="displayThumbnail();"> Show files in the directory </button>
+<br />
+
+<div id="thumbnail">
+</div>
+
+<hr>
+
+</div>
+<!----------------------------------------------------Content----------------------------------------------------->
+<div id="right"
+	style="width:700px;
+	height:500px;
+	background-color:orange;
+	float:left;">
+
+<div id="filePreview">
+</div>
+
+</div>
+<!----------------------------------------------------Footer----------------------------------------------------->
+<div id="bar"
+	style="width:900px;
+	height:45px;
+	background-color:black;
+	color:white;
+	float:left">
+
+<center>
+<h3>&copy Copyright 2019 by Web Design & Development</h3>
+</center>
+
+</div>
+</div>
+
+</body>
+</html>

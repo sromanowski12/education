@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Name:			Seth Romanowski
+Course:			Web Programming
+Assignment:		Lab #6 (JavaScript, Input Tag, Event Handling, DOM Manipulation)
+Semester:		Summer, 2019
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="JavaScript, Web Programming, DOM Manipulation, Event Handling">
+<title>JavaScript Arrays, Input Tag, Event Handling</title>
+
+<script type="text/javascript">
+	function showDirectory()
+	{
+		var myFiles = document.getElementById("files");
+
+		for (var i=0; i < myFiles.files.length; i++)
+		{
+			document.write("<b>File Name: </b>" + myFiles.files[i].name +" <br />");
+			document.write("<b>Type: </b>" + myFiles.files[i].type +" <br />");
+			document.write("<b>Size: </b>" + myFiles.files[i].size +" <br />");
+			document.write("<p>");
+		}
+	}
+	
+</script>
+</head>
+<body>
+	<center>
+	<h1>Seth Romanowski</h1>
+	<p>The lab provided an understanding of the input element and event handling. Also
+	showed how to navigate a file directory and how to access file properties</p>
+	</center>
+
+	<h1> Show the Directory and Select one or more files. </h1>
+	<input id="files" type="file" name="files[]" multiple />
+	<br />
+
+	<button onclick="showDirectory();"> Show files in the directory </button>
+	<br />
+	
+	
+
+</body>
+</html>
