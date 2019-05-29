@@ -51,6 +51,95 @@ DOM vs. BOM
   - Each browser has its own implementation
   - *BOM allows the developer to manipulate the browser window*
 
+**Interacting w/ BOM**
+
+| Window    | Methods/Events/Properties |
+|-----------|----------------|
+|           | open           |
+|           | close          |
+|           | name           |
+|           | length         |
+|           | width          |
+|           | parent         |
+|           | screenleft     |
+|           | screentop      |
+|           | alert()        |
+|           | prompt()       |
+|           | print()        |
+|           | moveTo()       |
+|           | moveBy()       |
+|           | scrollBy()     |
+|           | scrollTo()     |
+|           | blur()         |
+|           | setTimeout()   |
+| Screen    |                |
+|           | height         |
+|           | width          |
+|           | colorDepth     |
+| Navigator |                |
+|           | appName        |
+|           | CookiesEnabled |
+|           | JavaEnabled    |
+| History   |                |
+|           | length         |
+|           | back()         |
+|           | forward()      |
+|           | go()           |
+| Location  |                |
+|           | host           |
+|           | hostname       |
+|           | href           |
+|           | port           |
+|           | portocal()     |
+|           | assign()       |
+|           | reload()       |
+|           | replace()      |
+
+**Interacting w/ DOM**
+
+| Propeties | Description/Name    |
+|-----------|---------------------|
+|           | doctype             |
+|           | documentURL         |
+|           | inputEncoding       |
+|           | xmlEncoding         |
+|           | anchors             |
+|           | forms               |
+|           | images              |
+|           | links               |
+|           | referrer            |
+|           | title               |
+|           | URL                 |
+|           | domain              |
+|           | lastmodified        |
+| Methods   |                     |
+|           | open()              |
+|           | close()             |
+|           | write()             |
+|           | writeIn()           |
+|           | getElementName()    |
+|           | getElementById()    |
+|           | getElementTagName() |
+|           | renameNode()        |
+|           | setAttribute()      |
+|           | getAttribute()      |
+|           | removeAttribute()   |
+| Events    |                     |
+|           | load                |
+|           | close()             |
+|           | unload              |
+|           | resize              |
+|           | scroll              |
+|           | click               |
+|           | dblclick            |
+|           | mousedown           |
+|           | mouseup             |
+|           | mouseover           |
+|           | mouseout            |
+|           | keydown             |
+|           | keyup               |
+|           | keypress            |
+
 **Variables**
 - Variables are dynamically typed
 - Their type is determined only after they are assigned a value
@@ -67,7 +156,7 @@ myName = 4;         // change the type from string to int
 ```
 
 **Arrays**
-ALlocated statically & dynamically.
+Allocated statically & dynamically.
 
 Dynamic Arrays
 ```js
@@ -133,6 +222,36 @@ for(var student in testScore)
 {
     document.write(student + " : ");
     document.write(testScore[student] + "<br>");
+}
+```
+
+**Conditional**
+- **If Statement**
+```js
+if(statement)
+{
+    statement1;
+}
+else if(statement2)
+{
+    statement2;
+}
+else
+{
+    statement3;
+}
+```
+- **Switch Statement**
+```js
+switch(expression)
+{
+    case label1:
+        statement1;
+        break;
+    case label2:
+        statement2;
+        break;
+    default: statement3;
 }
 ```
 

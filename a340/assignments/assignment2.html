@@ -40,9 +40,9 @@ function displayThumbnail()
 			{
 			HTML = HTML + "<td onclick='displayContent(" + imgCount + ")'>";
 			
-			HTML = HTML + "<img src='/img/slide";
+			HTML = HTML + "<img src='http://cs.iusb.edu/~hhakimza/INFO-C413/Assigns/Assign2_Images/Slide";
 			HTML = HTML + imgCount;
-			HTML = HTML + ".png' width='35' height='35'>";
+			HTML = HTML + ".JPG' width='35' height='35'>";
 			
 			HTML = HTML + "</td>";
 			}
@@ -60,7 +60,7 @@ function displayContent(img)
 {
 
 	var pic = document.getElementById("filePreview");
-	pic.innerHTML = "<center><img src='/img/slide" + img + ".png' width='500' height='480'></center><b>File Path:</b> /img/slide" + img + ".png"; 
+	pic.innerHTML = "<center><img src='http://cs.iusb.edu/~hhakimza/INFO-C413/Assigns/Assign2_Images/Slide" + img + ".JPG' width='500' height='480'></center><b>File Path:</b> http://cs.iusb.edu/~hhakimza/INFO-C413/Assigns/Assign2_Images/Slide" + img + ".JPG"; 
 
 }
 </script>
