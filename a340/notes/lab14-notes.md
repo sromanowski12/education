@@ -1,3 +1,7 @@
+
+<!-- TOC -->
+
+<!-- /TOC -->
 ### **Lab 14**
 **Lab Goals**
 - PHP Files and Directory processing (opendir(), readdir(), closedir())

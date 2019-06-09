@@ -11,7 +11,7 @@ Java vs. JavaScript
 - JavaScript
   - Must be part of HTML document and runs within a browser
   - Interpreted line-by-line by the browser
-  - Object-based: code uses built0in extensible objects but no classes or inheritance
+  - Object-based: code uses builtin extensible objects but no classes or inheritance
   - Dynamically typed language
 **What is JavaScript**
 - A scripting language which is typically used to enhance the functionality and appearance of web pages.
@@ -54,51 +54,51 @@ DOM vs. BOM
 **Interacting w/ BOM**
 
 | Window    | Methods/Events/Properties |
-|-----------|----------------|
-|           | open           |
-|           | close          |
-|           | name           |
-|           | length         |
-|           | width          |
-|           | parent         |
-|           | screenleft     |
-|           | screentop      |
-|           | alert()        |
-|           | prompt()       |
-|           | print()        |
-|           | moveTo()       |
-|           | moveBy()       |
-|           | scrollBy()     |
-|           | scrollTo()     |
-|           | blur()         |
-|           | setTimeout()   |
-| Screen    |                |
-|           | height         |
-|           | width          |
-|           | colorDepth     |
-| Navigator |                |
-|           | appName        |
-|           | CookiesEnabled |
-|           | JavaEnabled    |
-| History   |                |
-|           | length         |
-|           | back()         |
-|           | forward()      |
-|           | go()           |
-| Location  |                |
-|           | host           |
-|           | hostname       |
-|           | href           |
-|           | port           |
-|           | portocal()     |
-|           | assign()       |
-|           | reload()       |
-|           | replace()      |
+| --------- | ------------------------- |
+|           | open                      |
+|           | close                     |
+|           | name                      |
+|           | length                    |
+|           | width                     |
+|           | parent                    |
+|           | screenleft                |
+|           | screentop                 |
+|           | alert()                   |
+|           | prompt()                  |
+|           | print()                   |
+|           | moveTo()                  |
+|           | moveBy()                  |
+|           | scrollBy()                |
+|           | scrollTo()                |
+|           | blur()                    |
+|           | setTimeout()              |
+| Screen    |                           |
+|           | height                    |
+|           | width                     |
+|           | colorDepth                |
+| Navigator |                           |
+|           | appName                   |
+|           | CookiesEnabled            |
+|           | JavaEnabled               |
+| History   |                           |
+|           | length                    |
+|           | back()                    |
+|           | forward()                 |
+|           | go()                      |
+| Location  |                           |
+|           | host                      |
+|           | hostname                  |
+|           | href                      |
+|           | port                      |
+|           | portocal()                |
+|           | assign()                  |
+|           | reload()                  |
+|           | replace()                 |
 
 **Interacting w/ DOM**
 
 | Propeties | Description/Name    |
-|-----------|---------------------|
+| --------- | ------------------- |
 |           | doctype             |
 |           | documentURL         |
 |           | inputEncoding       |
@@ -287,6 +287,31 @@ for(var attr in userprofile){
     document.write("<b>" + attr + ":</b>"+userprofile[attr] + "<br />");
 }
 ```
+**Built-in Objects**
+- Array
+- Boolean
+- Date
+- Math
+- Number
+- String
+- RegExp
+- Global
+
+**Built-in Functions**
+- alert()
+- confirm()
+- prompt()
+- parseInt()
+- parseFloat()
+- Math.max(x,y)
+- Math.min(x,y)
+- Math.random()
+- Date()
+- toString()
+- charAt()
+- toLowerCase()
+- toUppperCase()
+
 
 **User-defined Functions**
 ```js
