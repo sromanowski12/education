@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- AJAX: Lab19.html
+
+Name:			Seth Romanowski
+Course:			Web Programming
+Assignment:		Lab #19: Asynchronous JavaScript and XML
+Semester:		Summer, 2019
+-->
+<html>
+<html>
+    <head>
+        <script>
+            function PredictEmail(str) {
+                //Call AJAX ....
+
+                if(str.length == 0) {
+                    document.getElementById("fullEmail").innerHTML = "...";
+                    return;
+                } else {
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function() {
+                        if(this.readyState == 4 && this.status == 200) {
+                            document.getElementById("fullEmail").innerHTML = this.responseText;
+                        }
+                    }
+                    xmlhttp.open("GET","lab19_AJAX.php?partialEmail="+str,true);
+                    xmlhttp.send();
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <p><b>Start typing an email address in input field below</b></p>
+
+        <form>
+            Enter an email address: <input type="text" name="partialEmail" onkeyup="PredictEmail(this.value)">
+        </form>
+        <p>
+            Suggested Email: <span id="fullEmail"> </span>
+        </p>
+    </body>
+
+</html>

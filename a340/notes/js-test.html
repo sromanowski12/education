@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function displayDate()
+{
+    document.getElementById("placeholder").innerHTML = Date();
+}
+
+var mySchedule = new Array();
+mySchedule[0] = "CSCI-A 340";
+mySchedule[1] = "MATH-M 215";
+
+for(var i = 0; i < mySchedule.length; i++)
+{
+    document.write(mySchedule[i] + "<br / >");
+}
+
+
+var number=0;
+
+document.write("<table border='1'>");
+document.write("<tr>");
+while(number < 5){
+    document.write("<td>" + number + "</td>");
+    number++;
+}
+document.write("</tr>");
+document.write("</table>");
+
+</script>
+</head>
+<body>
+
+<h1>My First JavaScript</h1>
+<p id="placeholder">the date will appear here...</p>
+
+<button type="button" onclick="displayDate()">Display Date</button>
+
+</body>
+</html>

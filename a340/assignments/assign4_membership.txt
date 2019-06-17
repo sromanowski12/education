@@ -1,0 +1,67 @@
+<fname>
+Seth
+</fname>
+<lname>
+Romanowski
+</lname>
+<email>
+sromanowski12@gmail.com
+</email>
+<gender>
+Male
+</gender>
+<interests>
+Pizza Party 
+Visitor Employer Sites 
+Building Games 
+</interests>
+<fname>
+Tom
+</fname>
+<lname>
+Cruise
+</lname>
+<email>
+tcruise@gmail.com
+</email>
+<gender>
+Male
+</gender>
+<interests>
+Pizza Party 
+Building Games 
+</interests>
+<fname>
+Inyerman
+</fname>
+<lname>
+Fonseca
+</lname>
+<email>
+inyermanfonseca@gmail.com
+</email>
+<gender>
+Male
+</gender>
+<interests>
+Pizza Party 
+Visitor Employer Sites 
+Building Games 
+</interests>
+<fname>
+Inyerman
+</fname>
+<lname>
+Fonseca
+</lname>
+<email>
+inyermanfonseca@gmail.com
+</email>
+<gender>
+Male
+</gender>
+<interests>
+Pizza Party 
+Visitor Employer Sites 
+Building Games 
+</interests>

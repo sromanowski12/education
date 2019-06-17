@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+Name:			Seth Romanowski
+Course:			Web Programming
+Assignment:		Lab #10: (Intro to CSS)
+Semester:		Summer, 2019
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="name" content="Seth Romanowski">
+        <meta name="course" content="CSCI-A 340">
+        <meta name="assignment" content="Assignment #3">
+        <meta name="semester" content="Summer, 2019">
+        <script type="text/javascript">
+            function getImages()
+            {
+                var myFiles = document.getElementById("files");
+                var myDoc = document.getElementById("thumbail");
+
+                var k = 1;
+                var HTML = "";
+                HTML = HTML + "<table border=1>";
+        
+                for(var row = 1; row <= 5; row++)
+                {	
+                    HTML = HTML + "<tr>";
+                    for(var col = 1; col <= 5; col++)
+                    {
+                        HTML = HTML + "<td onclick='displayContent("+  myFiles.files[k].name + ")'>";
+                        HTML = HTML + "<img src='"+myFiles.files[k].name + "' height='90' width='80'>";
+                        HTML = HTML + ".png' width='35' height='35'>";
+  /*                      HTML = HTML + "</td>"; */
+                        k++;    
+                    }
+                    HTML = HTML + "</tr>";
+                }
+                HTML = HTML + "</table>";
+                myDoc.innerHTML = HTML;
+                
+            }
+
+            function displayContent(img)
+            {
+                var pic = document.getElementById("filePreview");
+                pic.innerHTML = "<img src='" + img + "' height='400' width='500'";
+            }
+
+
+        </script>
+
+
+        <link rel="stylesheet"
+              type="text/css"
+              href="style1.css">
+              
+    </head>
+    <body>
+        <div id="bar"></div>
+        <div id="header">
+            <br />
+            <b>PhotoGallery 1.0 &reg;</b>
+        </div>
+        <div id="bar"></div>
+        <div id="nav">
+            <input style="padding-top:25px;
+                    padding-left:200px;
+                    height:75px;
+                    width:200px;" 
+                    id="files" 
+                    type="file" 
+                    name="files[]"
+                    onchange="getImages();" 
+                    multiple />
+
+            <div id="left-circle">Style1</div>
+            <div id="center-circle">Style2</div>
+            <div id="right-circle">Style3</div>
+        </div>
+        <div id="bar"></div>
+        <div id="left">
+            <br />
+            <center>
+                Thumbnails
+            </center>
+            <hr style="border-color:white;">
+            <div id="thumbmail"></div>
+        </div>
+       <div id="right">
+
+       </div>
+       <div id="bar"></div>
+       <div id="footer">
+           <center>
+              <h2>&copy; Copyright 2019</h2>
+            </center>
+       </div>
+    </body>        
+</html>
