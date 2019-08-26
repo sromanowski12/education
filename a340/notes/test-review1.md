@@ -27,7 +27,7 @@
 
 **Cascading Style Sheet (CSS)**: used to control the "style & layout" of web documents. *Can be external or included in the HTML document*
 
-Included in HTML document or as external CSS file.
+* Included in HTML document or as external CSS file.
 
 _Internal_:
 ```html

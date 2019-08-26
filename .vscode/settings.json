@@ -1,4 +1,10 @@
 {
     "html.suggest.angular1": false,
-    "html.suggest.ionic": false
+    "html.suggest.ionic": false,
+    "favorites.sortDirection": "DESC",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#411A60",
+        "titleBar.activeBackground": "#5A2486",
+        "titleBar.activeForeground": "#FDFCFE"
+    }
 }

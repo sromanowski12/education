@@ -1,4 +1,26 @@
 ```sql
+SHOW DATABASES;
+SHOW TABLES;
+```
+
+```sql
+USE [ddtabase];
+```
+
+```sql
+CREATE TABLE example ( id smallint unsigned not null auto_increment, name varchar(20) not null, constraint pk_example primary key (id) );
+```
+
+```sql
+INSERT INTO example ( id, name ) VALUES ( null, 'Sample data' );
+```
+
+```sql
+
+```
+
+
+```sql
 CREATE TABLE `sethi518_mydata`.`bill_to` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
