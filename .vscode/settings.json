@@ -1,4 +1,9 @@
 {
     "html.suggest.angular1": false,
-    "html.suggest.ionic": false
+    "html.suggest.ionic": false,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#243202",
+        "titleBar.activeBackground": "#334603",
+        "titleBar.activeForeground": "#F5FEE0"
+    }
 }
