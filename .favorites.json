@@ -1,11 +1,20 @@
 [
     {
         "type": "Directory",
-        "name": "c:\\Users\\sroma\\source\\repos\\education\\a340",
+        "name": "C:\\Users\\sroma\\OneDrive - Lippert Components",
         "parent_id": null,
-        "fsPath": "c:\\Users\\sroma\\source\\repos\\education\\a340",
+        "fsPath": "C:\\Users\\sroma\\OneDrive - Lippert Components",
         "workspaceRoot": null,
         "workspacePath": null,
-        "id": "FQ64IJj3ruPqUHkM"
+        "id": "2tr0j6uhTeDXEZYI"
+    },
+    {
+        "type": "Directory",
+        "name": "C:\\Users\\sroma\\OneDrive - Indiana University South Bend",
+        "parent_id": null,
+        "fsPath": "C:\\Users\\sroma\\OneDrive - Indiana University South Bend",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "VQL7HnDdOXtKPr1W"
     }
 ]
