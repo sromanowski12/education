@@ -31,6 +31,19 @@ _**Ex.**_
 - **Tertiary Colors**: formed by mixing primary and secondary colors
   - Yellow-Orange, Red-Orange, Red-Purple, Blue-Purple, Blue-Green, Yellow-Green
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## **Processing**
 ```java
 line(1, 0, 4, 5);

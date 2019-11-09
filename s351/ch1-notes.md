@@ -15,9 +15,3 @@
 ### **Ch. 1.5: **
 ### **Ch. 1.6: **
 ### **Ch. 1.7: **
-
-
-Levels of Measurement:
-- Nominal: 
-- Ordinal
-- Interval/Ratio
