@@ -13,30 +13,80 @@ class Screen {
  int s_height=600;
  
  int s_bg_color;
- int screen_num; 
+ int s_number; 
 
- Button sl = new Button();
- 
+ Button sl_btn = new Button();
+ Button al_btn = new Button();
+ Button ei_btn = new Button();
+ Button vl_btn = new Button();
+ Button ti_btn = new Button();
+ Button am_btn = new Button();
+
+void setScreenNumber(int num){ s_number=num; }
+
+void setBackgroundColor(int clr){
+   s_bg_color = clr;
+   background(s_bg_color);
+}
+  
  void displayHome(){
-  // setBackgroundColor(0);
- sl.displaySmartLightsButton();
+     setScreenNumber(1);
+     displayMainMenuButtons();
  }
  
  void displayHomeDark(){
-   setBackgroundColor(0);
+    setScreenNumber(2);
+    setBackgroundColor(0);
+    displayMainMenuButtons();
  }
   
- void setBackgroundColor(int clr){
-   s_bg_color = clr;
-   background(s_bg_color);
+void displaySmartLights(){
+    
+}
+
+void displaySmartLightsDark(){
+    
+}
+
+void displayAudioLibrary(){
+    
+}
+
+void displayAudioLibraryDark(){
+    
+}
+ void displayMainMenuButtons(){
+   sl_btn.displaySmartLightsButton();
+   al_btn.displayAudioLibraryButton();
+   ei_btn.displayEmailButton();
+   vl_btn.displayVideoLibraryButton();
+   ti_btn.displayTextButton();
+   am_btn.displaySettingsButton();
+ }
+
+ void displaySmartLightsButtons(){
+
+ }
+
+ void displayAudioLibraryButons(){
+
+ }
+
+ void displayEmailButtons(){
+
+ }
+
+ void displayVideoLibraryButtons(){
+
+ }
+
+ void displayTextButtons(){
+
+ }
+
+ void displaySettingsButtons(){
+
  }
  
- void displayButtons(){
-   
- }
- 
- void displayHomeButton(){
-     
- }
   
 }
