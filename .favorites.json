@@ -1,1 +1,19 @@
-[]
+[
+    {
+        "type": "Group",
+        "name": "School",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "4g8bkMOwKzmDcuvU"
+    },
+    {
+        "type": "Directory",
+        "name": "C:\\Users\\sroma\\OneDrive - Indiana University South Bend\\Education\\IUSB",
+        "parent_id": "4g8bkMOwKzmDcuvU",
+        "fsPath": "C:\\Users\\sroma\\OneDrive - Indiana University South Bend\\Education\\IUSB",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "8hI3RfWU6St9MzjF"
+    }
+]

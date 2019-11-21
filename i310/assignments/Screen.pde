@@ -27,6 +27,8 @@ class Screen {
  Button am_btn = new Button();
  
  Button kr_btn = new Button();
+ Button play = new Button();
+ Button pause = new Button();
 
  PImage floor;
 
@@ -49,6 +51,7 @@ void clearScreenDark()
 
 
 void setScreenNumber(int num){ s_number=num; }
+int getScreenNumber(){ return s_number; }
 
 void setBackgroundColor(int clr){
    s_bg_color = clr;
@@ -112,7 +115,7 @@ void displaySmartLightsButtons(){
  }
 
  void displayVideoLibraryButtons(){
-
+    pause.displayPauseButton();
  }
 
  void displayTextButtons(){

@@ -49,7 +49,7 @@ Screen app = new Screen();
 void setup() {
   size(1080, 600);
   frameRate(30);
-  mov = new Movie(this, PATH);
+  mov = new Movie(this, Blockers);
 }
 
 void draw() {
