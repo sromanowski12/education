@@ -53,7 +53,11 @@ void setup() {
 }
 
 void draw() {
-  app.displayHomeDark();
+  if(app.isDark){
+    app.displayHomeDark();
+  } else {
+    app.displayHome();
+  }
   update(mouseX,mouseY);
   checkButtons();
 }
