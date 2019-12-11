@@ -47,5 +47,7 @@
 - **[Assignments](/s351/assignments)**
 - **[Notes](/s351/notes)**
 
-
-
+## **Other**
+### **[National Society of Leadership & Success (NSLS)](/nsls)**
+### **[MoneySmarts U](/moneyU)**
+### **Templates**
