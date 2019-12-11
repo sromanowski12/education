@@ -112,8 +112,43 @@ $\bar{x}\plusmn(z)(\sigma_{\bar{x}})$ or $\bar{x}\plusmn(t)(s_{\bar{x}})$
 
 ### **Ch. 11 & 12**
 ---
+### *Ch. 16**
+---
+**Correlation Coefficient**
 
+**Relationship**
+**Liner Relationship**
+**Positive Relationship**
+**Negative Relationship**
 
+**Non-Linear Relationship**
+
+**Hypothesis Testing (w/ Correlation)**
+Ex.
+Is family income significantly correlated with the incidence of violence against wives? You obtain a random sample of n = 50 and compute r = -.51
+
+### *Ch. 17**
+---
+**Line**
+**Slope**
+**Y-Intercept (Origin)**
+
+**Regression**
+**Slope of a Regression Line**
+**Interpretation of Slope of a Regression Line**
+Ex.
+For each hour of video games a child plays, he/she gets into .3 fights per week
+
+b_pop: Population parameter for slope (b)
+
+**How to plot a regression Line**
+Step 1. Compute b from raw data
+Step 2. Compute a
+Step 3. You need 2 points to draw a line, so you use the formula for a regression line to find these two points
+
+**Hypothesis Testing (w/ Regression)**
+Ex.
+Does playing video games cause kids to be more violent? We obtain data on this issue from 25 children. We compute b = .3 and r = .61
 ## **Extra Problems**
 ---
 **ch. 9 - 10**

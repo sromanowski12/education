@@ -1,59 +1,50 @@
 // Button Class
 
-//          Buttons
-// -----------------------------------------
-// Main Menu
-// - Smart Lights Module
-
-// - Video Player Module
-// - Messaging
-
-
 class Button {
+    // Button Properties
     int b_w, b_h, b_x, b_y, b_size = 50;
-    
- 
     int line_color, bg_color, number;
 
     boolean isPressed = false;
     boolean active = true;
-    boolean rectOver = false, rectOver2 = false, rectOver3 = false, rectOver4 = false;
-    boolean rectOver5 = false, rectOver6 = false, rectOver7 = false, rectOver8 = false;
-    boolean imgOver = false, imgOver2 = false, imgOver3 = false, imgOver4 = false;
-    boolean imgOver5 = false, imgOver6 = false, imgOver7 = false, imgOver8 = false;
+    boolean rectOver = false;
+    // rectOver2 = false, rectOver3 = false, rectOver4 = false;
+    // boolean rectOver5 = false, rectOver6 = false, rectOver7 = false, rectOver8 = false;
+    boolean imgOver = false;
+    // imgOver2 = false, imgOver3 = false, imgOver4 = false;
+    // boolean imgOver5 = false, imgOver6 = false, imgOver7 = false, imgOver8 = false;
   
-
-
-
+    // Text - Labels / Songs
     PFont rectStatus, imgStatus;
-    
+    PFont song1, song2, song3, song4, song5, artist;    
+    PFont kitchenlabel;
+
     // Button Icons
     PImage homeicon, lighticon, musicicon, emailicon, texticon, videoicon, hallwayicon, bathroomicon;
     PImage homelightsicon, settingsicon, kitchenicon, bedroomicon, livingroomicon;
-    PImage playicon, pauseicon, stopicon;
+
+    PImage playicon, pauseicon, stopicon, album1, album2;
 
     PImage gohomeicon;
     PImage musicfileicon, emailfileicon;
     
-    PFont song1, song2, song3, song4, song5;
-
-    PFont kitchenlabel;
-    
-    void setNumber(int num){ number=num; }
-    void setWidth(int w){ b_w = w; }
-    void setHeight(int h) { b_h = h; }
-    void setX(int x) { b_x = x; }
-    void setY(int y){ b_y = y; }
-    void setLineColor(int clr){ line_color=clr; }
-    void setBackgroundColor(int clr){ bg_color = clr; }
-    
+    // Functions - Set Button Properties
+    void setNumber(int num){ number=num; }              // Assings a value to number variable
+    void setWidth(int w){ b_w = w; }                    // Assings a value to b_w variable
+    void setHeight(int h) { b_h = h; }                  // Assings a value to b_h variable
+    void setX(int x) { b_x = x; }                       // Assings a value to b_x variable
+    void setY(int y){ b_y = y; }                        // Assings a value to b_y variable
+    void setSize(int s){ b_size = s; }                  // Assings a value to b_size variable
+    void setLineColor(int clr){ line_color=clr; }       // Assigns a value to line_color variable
+    void setBackgroundColor(int clr){ bg_color = clr; } // Assigns a value to bg_color variable
+    // Used to call functions that set height, width, x & y values
     void setInfo(int x, int y, int w, int h){
         setWidth(w);
         setHeight(h);
         setX(x);
         setY(y);
     }
-
+    // Assigns values to the background and line color
     void setColors(int c1, int c2){
         line_color = c1;
         bg_color = c2;
@@ -71,7 +62,7 @@ class Button {
         rect(b_x,b_y,b_w,b_h,15);
     }
 
-    // Main Menu
+    // Main Menu Functions
     // - Row 1:
     //   Button 1: Smart Lights
     void displaySmartLights(){
@@ -111,7 +102,7 @@ class Button {
         }
     }
 
-    // Button 3 - Email Inbox
+    //  Button 3 - Email Inbox
     void displayEmail(){
         setInfo(700,20,300,215);
         setColors(0,255);
@@ -302,32 +293,79 @@ class Button {
     }
     // Audio Library
     void displayAudioLibraryGrid(){
-      // 
-      musicfileicon = loadImage("music-file-icon.png"); // 75 x 75
-      playicon = loadImage("play-icon.png"); // 75 x 48
+      // Audio Library Icons
+      playicon = loadImage("play-icon.png");            // 75 x 48
+      // - Frank Sinatra Albums
+      album1 = loadImage("Nothing But the Best.jpg");   // 75 x 75
+      album2 = loadImage("A Jolly Christmas.jpg");      // 75 x 75
       
-      //
-      image(musicfileicon,500,25);
+      // Frank Sinatra Songs
+      // Row 1 - "A Jolly Christmas"
+      // Song 1 - "Jingle Bells"
+      image(album2,500,25);
       image(playicon,875,45);
       stroke(255);
       line(500, 100, 1000, 100);
       song1 = createFont("Arial Black", 18);
+      artist = createFont("Arial Black", 14);
       textFont(song1);
       fill(255);
       text("Jingle Bells",600,80);
-      //
-      image(musicfileicon,500,125);
+      textFont(artist);
+      fill(255);
+      text("By: Frank Sinatra",730,90);
+
+      // Row 2 - "Nothing But the Best"
+      // Song 2 - "Come Fly With Me"
+      image(album1,500,125);
       image(playicon,875,145);
       line(500, 200, 1000, 200);
-      image(musicfileicon,500,225);
+      song2 = createFont("Arial Black", 18);
+      textFont(song2);
+      fill(255);
+      text("Come Fly With Me",600,180);
+      textFont(artist);
+      fill(255);
+      text("By: Frank Sinatra",730,195);
+
+      // Row 3 - "Nothing But the Best"
+      // Song 3 - "The Way You Look Tonight"
+      image(album1,500,225);
       image(playicon,875,245);
       line(500, 300, 1000, 300);
-      image(musicfileicon,500,325);
+      song3 = createFont("Arial Black", 18);
+      textFont(song3);
+      fill(255);
+      text("The Way You Look Tonight",600,280);
+      textFont(artist);
+      fill(255);
+      text("By: Frank Sinatra",730,295);
+
+      // Row 4 - "Nothing But the Best"
+      // Song 4 - "Fly Me to the Moon"
+      image(album1,500,325);
       image(playicon,875,345);
       line(500, 400, 1000, 400);
-      image(musicfileicon,500,425);
+      song4 = createFont("Arial Black", 18);
+      textFont(song4);
+      fill(255);
+      text("Fly Me to the Moon",600,380);
+      textFont(artist);
+      fill(255);
+      text("By: Frank Sinatra",730,395);
+
+      // Row 5 - "Nothing But the Best"
+      // Song 5 - "My Way"
+      image(album1,500,425);
       image(playicon,875,445);
       line(500, 500, 1000, 500);
+      song5 = createFont("Arial Black", 18);
+      textFont(song5);
+      fill(255);
+      text("My Way",600,480);
+      textFont(artist);
+      fill(255);
+      text("By: Frank Sinatra",730,495);
     }
 
     // Video Library

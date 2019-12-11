@@ -28,61 +28,61 @@ void mousePressed() {
     }
   }
   // Audio Library Button
-  if (app.al_btn.rectOver2 == true) { 
-    if (app.al_btn.imgOver2 == true) { 
-      app.al_btn.imgOver2 = false;
+  if (app.al_btn.rectOver == true) { 
+    if (app.al_btn.imgOver == true) { 
+      app.al_btn.imgOver = false;
     } else {
-      app.al_btn.imgOver2 = true;
+      app.al_btn.imgOver = true;
     }
   }
   // Email Inbox Button
-  if (app.ei_btn.rectOver3 == true) { 
-    if (app.ei_btn.imgOver3 == true) { 
-      app.ei_btn.imgOver3 = false;
+  if (app.ei_btn.rectOver == true) { 
+    if (app.ei_btn.imgOver == true) { 
+      app.ei_btn.imgOver = false;
     } else {
-      app.ei_btn.imgOver3 = true;
+      app.ei_btn.imgOver = true;
     }
   }
   // Video library Button
-  if (app.vl_btn.rectOver4 == true) {
-    if (app.vl_btn.imgOver4 == true) { 
-      app.vl_btn.imgOver4 = false;
+  if (app.vl_btn.rectOver == true) {
+    if (app.vl_btn.imgOver == true) { 
+      app.vl_btn.imgOver = false;
     } else {
-      app.vl_btn.imgOver4 = true;
+      app.vl_btn.imgOver = true;
     }
   }
   // Text Messaging Button
-  if (app.ti_btn.rectOver5 == true) { 
-    if (app.ti_btn.imgOver5 == true) { 
-      app.ti_btn.imgOver5 = false;
+  if (app.ti_btn.rectOver == true) { 
+    if (app.ti_btn.imgOver == true) { 
+      app.ti_btn.imgOver = false;
     } else {
-      app.ti_btn.imgOver5 = true;
+      app.ti_btn.imgOver = true;
     }
   }
   // Settings Button
-  if (app.am_btn.rectOver6 == true) { 
-    if (app.am_btn.imgOver6 == true) { 
-      app.am_btn.imgOver6 = false;
+  if (app.am_btn.rectOver == true) { 
+    if (app.am_btn.imgOver == true) { 
+      app.am_btn.imgOver = false;
     } else {
-      app.am_btn.imgOver6 = true;
+      app.am_btn.imgOver = true;
     }
   }
   // Smart Lights
   // Go Home Button
-  if(app.gh_btn.rectOver7 == true) {
-    if(app.gh_btn.imgOver7 == true) {
-      app.gh_btn.imgOver7 = false;
+  if(app.gh_btn.rectOver == true) {
+    if(app.gh_btn.imgOver == true) {
+      app.gh_btn.imgOver = false;
     } else {
-      app.gh_btn.imgOver7 = true;
+      app.gh_btn.imgOver = true;
     }
   }
   // Video library
   // Pause Button 
-  if(app.pause.rectOver8 == true) {
-    if(app.pause.imgOver8 == true) {
-      app.pause.imgOver8 = false;
+  if(app.pause.rectOver == true) {
+    if(app.pause.imgOver == true) {
+      app.pause.imgOver = false;
     } else {
-      app.pause.imgOver8 = true;
+      app.pause.imgOver = true;
     }
   }
 
@@ -99,48 +99,48 @@ void update(int x, int y) {
   }
   // Audio Library Button
   if ( overRect(app.al_btn.b_x, app.al_btn.b_y, (app.al_btn.b_size + 250),215) ) {
-    app.al_btn.rectOver2 = true;
+    app.al_btn.rectOver = true;
   } else {
-    app.al_btn.rectOver2 = false;
+    app.al_btn.rectOver = false;
   }
   // Email Inbox Button
   if ( overRect(app.ei_btn.b_x, app.ei_btn.b_y, (app.ei_btn.b_size + 250),215) ) {
-    app.ei_btn.rectOver3 = true;
+    app.ei_btn.rectOver = true;
   } else {
-    app.ei_btn.rectOver3 = false;
+    app.ei_btn.rectOver = false;
   }
   // Video Library Button
   if ( overRect(app.vl_btn.b_x, app.vl_btn.b_y, (app.vl_btn.b_size + 250),215) ) {
-    app.vl_btn.rectOver4 = true;
+    app.vl_btn.rectOver = true;
   } else {
-    app.vl_btn.rectOver4 = false;
+    app.vl_btn.rectOver = false;
   }
   // Text Messaging Button
   if ( overRect(app.ti_btn.b_x, app.ti_btn.b_y, (app.ti_btn.b_size + 250),215) ) {
-    app.ti_btn.rectOver5 = true;
+    app.ti_btn.rectOver = true;
   } else {
-    app.ti_btn.rectOver5 = false;
+    app.ti_btn.rectOver = false;
   }
     // Settings Button
   if ( overRect(app.am_btn.b_x, app.am_btn.b_y, (app.am_btn.b_size + 250),215) ) {
-    app.am_btn.rectOver6 = true;
+    app.am_btn.rectOver = true;
   } else {
-    app.am_btn.rectOver6 = false;
+    app.am_btn.rectOver = false;
   }
   // Smart Lights
   // Go Home Button
   if ( overRect(app.gh_btn.b_x, app.gh_btn.b_y, (app.gh_btn.b_size + 250),215) ) {
-    app.gh_btn.rectOver7 = true;
+    app.gh_btn.rectOver = true;
   } else {
-    app.gh_btn.rectOver7 = false;
+    app.gh_btn.rectOver = false;
   }
   
   // Video Library
   // Pause Button
   if ( overRect(app.pause.b_x, app.pause.b_y, (app.pause.b_size + 250),215) ) {
-    app.pause.rectOver8 = true;
+    app.pause.rectOver = true;
   } else {
-    app.pause.rectOver8 = false;
+    app.pause.rectOver = false;
   }
 
 }
@@ -172,7 +172,7 @@ void checkButtons(){
     //     }
     // }
     // Audio Library Button
-    else if (app.al_btn.imgOver2 == true) {
+    else if (app.al_btn.imgOver == true) {
         if(app.isDark){
             app.clearHomeScreenDark();
             app.displayAudioLibraryDark();
@@ -182,7 +182,7 @@ void checkButtons(){
         }
     }
     // Email Inbox Button
-    else if (app.ei_btn.imgOver3 == true) {
+    else if (app.ei_btn.imgOver == true) {
         if(app.isDark){
             app.clearHomeScreenDark();
             app.displayEmailInbox();
@@ -191,7 +191,7 @@ void checkButtons(){
         }
     }
     // Video Library Button
-    else if (app.vl_btn.imgOver4 == true) {
+    else if (app.vl_btn.imgOver == true) {
         image(app.vl_btn.videoicon,400,50);  
         
         mov.play();
@@ -205,7 +205,7 @@ void checkButtons(){
         app.displayVideoLibraryButtons();
     }
     // Text Messaging Button
-    else if (app.ti_btn.imgOver5 == true) {
+    else if (app.ti_btn.imgOver == true) {
       if(app.isDark){
           app.clearHomeScreenDark();
       } else {
@@ -213,7 +213,7 @@ void checkButtons(){
       }
     }
     // Settings Button
-    else if (app.am_btn.imgOver6 == true) {
+    else if (app.am_btn.imgOver == true) {
       if(app.isDark){
           app.clearHomeScreenDark();
       } else {
@@ -224,7 +224,7 @@ void checkButtons(){
     // Kitchen Button
 
     // Go Home Button
-    if (app.gh_btn.imgOver7 == true) {
+    if (app.gh_btn.imgOver == true) {
       if(app.isDark){
         app.sl_btn.rectOver = true;
         app.sl_btn.imgOver = true;
@@ -233,7 +233,7 @@ void checkButtons(){
  
     // Video Library
     // Pause Button
-    if(app.pause.imgOver8 == true){
+    if(app.pause.imgOver == true){
            mov.stop(); 
     }
 
