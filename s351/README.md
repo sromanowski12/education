@@ -1,1 +1,1 @@
-## **Social Statistics**
+## **[SOC-S351](/s351) [Social Statistics](https://iu.instructure.com/courses/1846514)**
