@@ -20,129 +20,149 @@ boolean overRect(int x, int y, int width, int height) {
 void mousePressed() {
   // Main Menu
   // Smart Lights Button
-  if (app.sl_btn.rectOver == true) { 
-    if (app.sl_btn.imgOver == true) { 
-      app.sl_btn.imgOver = false;
+  if (main.sl_btn.rectOver == true) { 
+    if (main.sl_btn.imgOver == true) { 
+      main.sl_btn.imgOver = false;
     } else {
-      app.sl_btn.imgOver = true;
+      main.sl_btn.imgOver = true;
     }
   }
   // Audio Library Button
-  if (app.al_btn.rectOver == true) { 
-    if (app.al_btn.imgOver == true) { 
-      app.al_btn.imgOver = false;
+  if (main.al_btn.rectOver == true) { 
+    if (main.al_btn.imgOver == true) { 
+      main.al_btn.imgOver = false;
     } else {
-      app.al_btn.imgOver = true;
+      main.al_btn.imgOver = true;
     }
   }
   // Email Inbox Button
-  if (app.ei_btn.rectOver == true) { 
-    if (app.ei_btn.imgOver == true) { 
-      app.ei_btn.imgOver = false;
+  if (main.ei_btn.rectOver == true) { 
+    if (main.ei_btn.imgOver == true) { 
+      main.ei_btn.imgOver = false;
     } else {
-      app.ei_btn.imgOver = true;
+      main.ei_btn.imgOver = true;
     }
   }
   // Video library Button
-  if (app.vl_btn.rectOver == true) {
-    if (app.vl_btn.imgOver == true) { 
-      app.vl_btn.imgOver = false;
+  if (main.vl_btn.rectOver == true) {
+    if (main.vl_btn.imgOver == true) { 
+      main.vl_btn.imgOver = false;
     } else {
-      app.vl_btn.imgOver = true;
+      main.vl_btn.imgOver = true;
     }
   }
   // Text Messaging Button
-  if (app.ti_btn.rectOver == true) { 
-    if (app.ti_btn.imgOver == true) { 
-      app.ti_btn.imgOver = false;
+  if (main.ti_btn.rectOver == true) { 
+    if (main.ti_btn.imgOver == true) { 
+      main.ti_btn.imgOver = false;
     } else {
-      app.ti_btn.imgOver = true;
+      main.ti_btn.imgOver = true;
     }
   }
   // Settings Button
-  if (app.am_btn.rectOver == true) { 
-    if (app.am_btn.imgOver == true) { 
-      app.am_btn.imgOver = false;
+  if (main.am_btn.rectOver == true) { 
+    if (main.am_btn.imgOver == true) { 
+      main.am_btn.imgOver = false;
     } else {
-      app.am_btn.imgOver = true;
+      main.am_btn.imgOver = true;
     }
   }
   // Smart Lights
   // Go Home Button
-  if(app.gh_btn.rectOver == true) {
-    if(app.gh_btn.imgOver == true) {
-      app.gh_btn.imgOver = false;
+  if(main.gh_btn.rectOver == true) {
+    if(main.gh_btn.imgOver == true) {
+      main.gh_btn.imgOver = false;
+      main.sl_btn.imgOver = true;
     } else {
-      app.gh_btn.imgOver = true;
+      main.gh_btn.imgOver = true;
+      main.sl_btn.imgOver = false;
     }
   }
   // Video library
   // Pause Button 
-  if(app.pause.rectOver == true) {
-    if(app.pause.imgOver == true) {
-      app.pause.imgOver = false;
+  if(main.pause.rectOver == true) {
+    if(main.pause.imgOver == true) {
+      main.pause.imgOver = false;
     } else {
-      app.pause.imgOver = true;
+      main.pause.imgOver = true;
     }
   }
 
+  // Settings
+  // Switch Button 
+  if(main.switch_btn.rectOver == true) {
+    if(main.switch_btn.imgOver == true) {
+      main.switch_btn.imgOver = false;
+    } else {
+      main.switch_btn.imgOver = true;
+    }
+  }
 }
 
-void update(int x, int y) { 
+void updateMain(int x, int y) { 
   // Main Menu
   // Smart Lights Button
-  if ( overRect(app.sl_btn.b_x, app.sl_btn.b_y, (app.sl_btn.b_size + 250),215) ) {
-    app.sl_btn.rectOver = true;
+  if ( overRect(main.sl_btn.b_x, main.sl_btn.b_y, main.sl_btn.b_w,main.sl_btn.b_h)) {
+    main.sl_btn.rectOver = true;
   } else {
-    app.sl_btn.rectOver = false;
-
+    main.sl_btn.rectOver = false;
   }
   // Audio Library Button
-  if ( overRect(app.al_btn.b_x, app.al_btn.b_y, (app.al_btn.b_size + 250),215) ) {
-    app.al_btn.rectOver = true;
+  if ( overRect(main.al_btn.b_x, main.al_btn.b_y, (main.al_btn.b_size + 250),215) ) {
+    main.al_btn.rectOver = true;
   } else {
-    app.al_btn.rectOver = false;
+    main.al_btn.rectOver = false;
   }
   // Email Inbox Button
-  if ( overRect(app.ei_btn.b_x, app.ei_btn.b_y, (app.ei_btn.b_size + 250),215) ) {
-    app.ei_btn.rectOver = true;
+  if ( overRect(main.ei_btn.b_x, main.ei_btn.b_y, main.ei_btn.b_w,main.ei_btn.b_h)) {
+    main.ei_btn.rectOver = true;
   } else {
-    app.ei_btn.rectOver = false;
+    main.ei_btn.rectOver = false;
   }
   // Video Library Button
-  if ( overRect(app.vl_btn.b_x, app.vl_btn.b_y, (app.vl_btn.b_size + 250),215) ) {
-    app.vl_btn.rectOver = true;
+  if ( overRect(main.vl_btn.b_x, main.vl_btn.b_y, (main.vl_btn.b_size + 250),215) ) {
+    main.vl_btn.rectOver = true;
   } else {
-    app.vl_btn.rectOver = false;
+    main.vl_btn.rectOver = false;
   }
   // Text Messaging Button
-  if ( overRect(app.ti_btn.b_x, app.ti_btn.b_y, (app.ti_btn.b_size + 250),215) ) {
-    app.ti_btn.rectOver = true;
+  if ( overRect(main.ti_btn.b_x, main.ti_btn.b_y, (main.ti_btn.b_size + 250),215) ) {
+    main.ti_btn.rectOver = true;
   } else {
-    app.ti_btn.rectOver = false;
+    main.ti_btn.rectOver = false;
   }
     // Settings Button
-  if ( overRect(app.am_btn.b_x, app.am_btn.b_y, (app.am_btn.b_size + 250),215) ) {
-    app.am_btn.rectOver = true;
+  if ( overRect(main.am_btn.b_x, main.am_btn.b_y, (main.am_btn.b_size + 250),215) ) {
+    main.am_btn.rectOver = true;
   } else {
-    app.am_btn.rectOver = false;
+    main.am_btn.rectOver = false;
   }
+
   // Smart Lights
   // Go Home Button
-  if ( overRect(app.gh_btn.b_x, app.gh_btn.b_y, (app.gh_btn.b_size + 250),215) ) {
-    app.gh_btn.rectOver = true;
+  if ( overRect(main.gh_btn.b_x, main.gh_btn.b_y, main.gh_btn.b_w,main.gh_btn.b_h)) {
+    main.gh_btn.rectOver = true;
+    main.sl_btn.rectOver = false;
   } else {
-    app.gh_btn.rectOver = false;
+    main.gh_btn.rectOver = false;
+   // main.sl_btn.rectOver = true;
   }
   
   // Video Library
   // Pause Button
-  if ( overRect(app.pause.b_x, app.pause.b_y, (app.pause.b_size + 250),215) ) {
-    app.pause.rectOver = true;
+  if ( overRect(main.pause.b_x, main.pause.b_y, (main.pause.b_size + 250),215) ) {
+    main.pause.rectOver = true;
   } else {
-    app.pause.rectOver = false;
+    main.pause.rectOver = false;
   }
 
+  // Settings
+  // Settings Switch Button
+  if ( overRect(main.switch_btn.b_x, main.switch_btn.b_y, main.switch_btn.b_w,main.switch_btn.b_h) ) {
+    main.switch_btn.rectOver = true;
+  } else {
+    main.switch_btn.rectOver = false;
+  }
 }
 
 
@@ -153,46 +173,47 @@ void checkButtons(){
 
   // Main Menu
   // Smart Lights Button
-    if (app.sl_btn.imgOver == true) {
+    
+    if (main.sl_btn.imgOver == true) {
        
-        if(app.isDark){
-            app.clearHomeScreenDark();
-            app.displaySmartLightsButtons();
+        if(main.isDark){
+            main.clearHomeScreenDark();
+            main.displaySmartLightsDark();
 
-        } else {
-            app.clearHomeScreen();
-            app.displaySmartLightsButtons();
+        } else{
+            main.clearHomeScreen();
+            main.displaySmartLights();
         }
     }  
     // else {
-    //     if(app.isDark){
-    //       app.clearSmartLightsScreenDark();
+    //     if(main.isDark){
+    //       main.clearSmartLightsScreenDark();
     //     } else {
-    //       app.clearSmartLightsScreen();
+    //       main.clearSmartLightsScreen();
     //     }
     // }
     // Audio Library Button
-    else if (app.al_btn.imgOver == true) {
-        if(app.isDark){
-            app.clearHomeScreenDark();
-            app.displayAudioLibraryDark();
+     if (main.al_btn.imgOver == true) {
+        if(main.isDark){
+            main.clearHomeScreenDark();
+            main.displayAudioLibraryDark();
             
         } else {
-            app.clearHomeScreen();
+            main.clearHomeScreen();
         }
     }
     // Email Inbox Button
-    else if (app.ei_btn.imgOver == true) {
-        if(app.isDark){
-            app.clearHomeScreenDark();
-            app.displayEmailInbox();
+     if (main.ei_btn.imgOver == true) {
+        if(main.isDark){
+            main.clearHomeScreenDark();
+            main.displayEmailInbox();
         } else {
-            app.clearHomeScreen();
+            main.clearHomeScreen();
         }
     }
     // Video Library Button
-    else if (app.vl_btn.imgOver == true) {
-        image(app.vl_btn.videoicon,400,50);  
+     if (main.vl_btn.imgOver == true) {
+        image(main.vl_btn.videoicon,400,50);  
         
         mov.play();
         
@@ -202,40 +223,81 @@ void checkButtons(){
         mov.volume(2);
         image(mov,0,0,width,height);
 
-        app.displayVideoLibraryButtons();
+        main.displayVideoLibraryButtons();
     }
     // Text Messaging Button
-    else if (app.ti_btn.imgOver == true) {
-      if(app.isDark){
-          app.clearHomeScreenDark();
+    if (main.ti_btn.imgOver == true) {
+      if(main.isDark){
+          main.clearHomeScreenDark();
       } else {
-          app.clearHomeScreen();
+          main.clearHomeScreen();
       }
     }
     // Settings Button
-    else if (app.am_btn.imgOver == true) {
-      if(app.isDark){
-          app.clearHomeScreenDark();
+     if (main.am_btn.imgOver == true) {
+      if(main.isDark){
+          main.clearHomeScreenDark();
+          main.isDark = true;
+          main.switch_btn.displaySwitchOff();
+          main.gh_btn.displayHomeButton();
       } else {
-          app.clearHomeScreen();
+          main.clearHomeScreen();
+          main.isDark = false;
+          main.switch_btn.displaySwitchOff();
+          main.gh_btn.displayHomeButton();
       }
     }
+
     // Smart Lights
     // Kitchen Button
 
     // Go Home Button
-    if (app.gh_btn.imgOver == true) {
-      if(app.isDark){
-        app.sl_btn.rectOver = true;
-        app.sl_btn.imgOver = true;
-      }
-   }
+  //   if (main.gh_btn.imgOver == true) {
+  //     if(main.isDark){
+  //       main.sl_btn.rectOver = true;
+  //       main.sl_btn.imgOver = true;
+  //     }
+  //  }
  
     // Video Library
     // Pause Button
-    if(app.pause.imgOver == true){
-           mov.stop(); 
+    if(main.pause.imgOver == true){
+        mov.stop(); 
     }
 
-
+    // Settings
+    // Settings Switch Button
+    if(main.switch_btn.imgOver == true){   
+        if(main.isDark){
+          if(main.am_btn.imgOver == false){
+            main.clearHomeScreen();
+            main.displayMainMenuButtons();
+          } else {
+            main.clearHomeScreen();
+            main.switch_btn.displaySwitchOn();
+            main.isDark = false;
+            main.gh_btn.displayHomeButton();
+          }
+        } else {
+            main.clearHomeScreenDark();
+            main.switch_btn.displaySwitchOn();
+            main.isDark = true;
+            main.gh_btn.displayHomeButton();
+          }
+    }
+    
+    if(main.switch_btn.imgOver == true && main.am_btn.imgOver == true){   
+        if(main.isDark){
+          main.clearHomeScreen();
+          main.switch_btn.displaySwitchOn();
+          main.isDark = false;
+          main.gh_btn.displayHomeButton();
+        } 
+        else {
+          main.clearHomeScreenDark();
+          main.switch_btn.displaySwitchOn();
+          main.isDark = true;
+          main.gh_btn.displayHomeButton();
+        } 
+    }
 }

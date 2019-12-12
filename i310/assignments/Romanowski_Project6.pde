@@ -44,8 +44,6 @@
 import processing.video.*;
 import processing.sound.*;
 
-Screen app = new Screen();
-
 void setup() {
   size(1080, 600);
   frameRate(30);
@@ -53,11 +51,7 @@ void setup() {
 }
 
 void draw() {
-  if(app.isDark){
-    app.displayHomeDark();
-  } else {
-    app.displayHome();
-  }
-  update(mouseX,mouseY);
-  checkButtons();
+   showHome2();
+   updateMain(mouseX,mouseY);
+   checkButtons();
 }

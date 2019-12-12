@@ -17,7 +17,7 @@ class Screen {
  
  boolean isDark = true;
 
- Button app_btn = new Button();
+ Button btn = new Button();
 
  Button sl_btn = new Button(); // Smart Lights Button
  Button al_btn = new Button(); // Audio Library Button
@@ -31,6 +31,8 @@ class Screen {
  Button kr_btn = new Button();
  Button play = new Button();
  Button pause = new Button();
+
+ Button switch_btn = new Button(); // Settings Switch Button
 
 
 void setScreenNumber(int num){ number=num; }
@@ -179,7 +181,7 @@ void displayMainMenuButtons(){
 
  }
 
- void displaySettingsButtons(){
-
- }
+//  void displaySettingsButtons(){
+//      am_btn.displaySwitchOff();
+//  }
 }

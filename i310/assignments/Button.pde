@@ -6,7 +6,8 @@ class Button {
     int line_color, bg_color, number;
 
     boolean isPressed = false;
-    boolean active = true;
+    boolean active = false;
+    boolean disable = true;
     boolean rectOver = false;
     // rectOver2 = false, rectOver3 = false, rectOver4 = false;
     // boolean rectOver5 = false, rectOver6 = false, rectOver7 = false, rectOver8 = false;
@@ -19,6 +20,8 @@ class Button {
     PFont song1, song2, song3, song4, song5, artist;    
     PFont kitchenlabel;
 
+    PFont darkStatus, lightStatus;
+
     // Button Icons
     PImage homeicon, lighticon, musicicon, emailicon, texticon, videoicon, hallwayicon, bathroomicon;
     PImage homelightsicon, settingsicon, kitchenicon, bedroomicon, livingroomicon;
@@ -27,6 +30,8 @@ class Button {
 
     PImage gohomeicon;
     PImage musicfileicon, emailfileicon;
+
+    PImage switchOn, switchOff;
     
     // Functions - Set Button Properties
     void setNumber(int num){ number=num; }              // Assings a value to number variable
@@ -54,12 +59,16 @@ class Button {
          stroke(bg);
          fill(bg);
          rect(b_x,b_y,b_w,b_h);
+         active = false;
+         disable = true;
     }
     
     void display(){
         stroke(line_color);
         fill(bg_color);
         rect(b_x,b_y,b_w,b_h,15);
+        active = true;
+        disable = true;
     }
 
     // Main Menu Functions
@@ -75,7 +84,7 @@ class Button {
     
     void hideSmartLights(int x, int y, int w, int h){
         setInfo(x,y,w,h);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -94,7 +103,7 @@ class Button {
 
     void hideAudioLibrary(int x, int y, int w, int h){
         setInfo(x,y,w,h);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -114,7 +123,7 @@ class Button {
 
     void hideEmail(int x, int y, int w, int h){
         setInfo(x,y,w,h);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -134,7 +143,7 @@ class Button {
 
     void hideVideoLibrary(int x, int y, int w, int h){
         setInfo(x,y,w,h);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -153,7 +162,7 @@ class Button {
 
     void hideTextMsg(int x, int y, int w, int h){
         setInfo(x,y,w,h);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -172,7 +181,7 @@ class Button {
 
     void hideSettings(int x, int y, int w, int h){
         setInfo(x,y,w,h);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -237,7 +246,7 @@ class Button {
     void hideRooms(){
         // Kitchen Button
         setInfo(10,10,110,110);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -245,7 +254,7 @@ class Button {
         }
         // Bathroom Button
         setInfo(10,130,110,110);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -253,7 +262,7 @@ class Button {
         }
         // Bedroom Button
         setInfo(10,250,110,110);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -261,7 +270,7 @@ class Button {
         }
         // Living Room Button
         setInfo(10,370,110,110);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -269,7 +278,7 @@ class Button {
         }
         // Hallway Button
         setInfo(10,490,110,110);
-        if(app.isDark){
+        if(main.isDark){
           hide(40);
         }
         else {
@@ -283,7 +292,7 @@ class Button {
         homelightsicon = loadImage("apartment-all-lights-on.png"); // 210 x 210
         image(homelightsicon, 360, 110);
     }
-    
+    // Display Go Home Button
     void displayHomeButton(){
         setInfo(950,10,85,85);
         setColors(0,255);
@@ -382,4 +391,36 @@ class Button {
     // Text
 
     // Settings
+    // Off Switch Button
+    void displaySwitchOff(){
+        setInfo(10,10,132,80);
+        setColors(0,255);
+        display();
+        rect(b_x,b_y,b_w,b_h,15);
+        switchOff = loadImage("offSwitch.png"); // 132 x 80
+        image(switchOff, 10, 10);
+
+        darkStatus = createFont("Arial Black", 24);
+        textFont(darkStatus);
+        fill(255);
+        
+        text("Dark Mode",530,100);
+        textFont(darkStatus);
+    }
+
+    void displaySwitchOn(){
+        setInfo(10,10,132,80);
+        setColors(0,255);
+        display();
+        rect(b_x,b_y,b_w,b_h,15);
+        switchOn = loadImage("onSwitch.png"); // 132 x 80
+        image(switchOn, 10, 10);
+
+        lightStatus = createFont("Arial Black", 24);
+        textFont(lightStatus);
+        fill(0);
+        
+        text("Light Mode",530,100);
+        textFont(lightStatus);
+    }
 }

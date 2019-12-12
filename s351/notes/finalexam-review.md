@@ -112,16 +112,28 @@ $\bar{x}\plusmn(z)(\sigma_{\bar{x}})$ or $\bar{x}\plusmn(t)(s_{\bar{x}})$
 
 ### **Ch. 11 & 12**
 ---
+
+
 ### *Ch. 16**
 ---
-**Correlation Coefficient**
+**Correlation Coefficient (r)**: (Pearson Correlation Coefficient)measures the degree to which a linear relationship exists between two variables.
+- It captures both the strength and direction of a relationship
+- **Properties of r**:
+1. Ranges from +1 to -1
+- Positive r values indicate a positive relationship
+- Negative r values indicate a negative relationship
 
 **Relationship**
 **Liner Relationship**
 **Positive Relationship**
+**Perfect Positive Relationship**
++1
 **Negative Relationship**
-
+**Perfect Negative Relationship**
+-1
 **Non-Linear Relationship**
+
+0 - means that there is no linear relationship between the variables
 
 **Hypothesis Testing (w/ Correlation)**
 Ex.
@@ -149,6 +161,9 @@ Step 3. You need 2 points to draw a line, so you use the formula for a regressio
 **Hypothesis Testing (w/ Regression)**
 Ex.
 Does playing video games cause kids to be more violent? We obtain data on this issue from 25 children. We compute b = .3 and r = .61
+
+
+
 ## **Extra Problems**
 ---
 **ch. 9 - 10**
