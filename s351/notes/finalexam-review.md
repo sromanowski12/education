@@ -108,11 +108,19 @@ $\bar{x}\plusmn(z)(\sigma_{\bar{x}})$ or $\bar{x}\plusmn(t)(s_{\bar{x}})$
 - *Area of Rejection*
 
 **Type 1 Error**
+
+
+Column A | Column B | Column C
+---------|----------|---------
+A1 | B1 | C1
+A2 | B2 | C2
+A3 | B3 | C3
+
+
 **Type 2 Error**
 
 ### **Ch. 11 & 12**
 ---
-
 
 ### *Ch. 16**
 ---
@@ -205,3 +213,4 @@ Does playing video games cause kids to be more violent? We obtain data on this i
   - d)
 - Step 4.
 - Step 5.
+

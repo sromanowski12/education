@@ -46,12 +46,14 @@ import processing.sound.*;
 
 void setup() {
   size(1080, 600);
-  frameRate(30);
-  mov = new Movie(this, Blockers);
+ // frameRate(30);
+  mov = new Movie(this, moviePath1);
+  frank1 = new SoundFile(this, "Fly Me to the Moon.wav");
+//  frank1.play();
 }
 
 void draw() {
-   showHome2();
+   showHome();
    updateMain(mouseX,mouseY);
    checkButtons();
 }

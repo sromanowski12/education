@@ -4,22 +4,22 @@ Screen app = new Screen();
 Screen main = new Screen();
 Screen sl = new Screen();
 
-// void showHome(){
-//   if(app.isDark){
-//       app.displayHomeDark();
-//     } else {
-//       app.displayHome();
-//     }
-// }
+int num;
 
-void showHome2(){
-    if(main.isDark){
+void showHome(){
+  if(main.isDark){
       main.displayHomeDark();
+      
     } else {
       main.displayHome();
+      
     }
 }
 
-void showSL(){
-    sl.displaySmartLightsDark();
-}
+// void showHome2(){
+//     if(main.isDark){
+//       main.displayHomeDark();
+//     } else {
+//       main.displayHome();
+//     }
+// }
