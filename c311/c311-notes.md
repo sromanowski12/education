@@ -93,6 +93,23 @@ List Manipulation
 
 
 
+```lisp
+(defun is-prime (val)
+  "Function to determine if a number is prime"
+  (let ((index 1) (limit (- val 2)))      ; index initialized to 2 and later used as divisor
+    (if (< val 2) nil                     ; Return nil if val < 2, val is not prime
+      (if (= val 2) t                     ; Return t if val = 2, val is prime
+        (dotimes (count limit result)     ; Iterate through all possible divisors <= val
+          (setq index (1+ count))
+          (if (not (eq (% val index) 0))  ; Determines if val is even or odd
+              (setq result t)             ; if val is even, return t
+            (setq result nil)))))))       ; otherwise set result to nil
+
+```
+
+
+
+
 **Test Functions**
 
 ```lisp
