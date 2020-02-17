@@ -27,6 +27,20 @@
 **Global Variables**
 **setq**
 
+
+mod dividend divisor
+
+This function returns the value of dividend modulo divisor; in other words, the remainder after division of dividend by divisor, but with the same sign as divisor. The arguments must be numbers or markers.
+
+Unlike %, mod permits floating-point arguments; it rounds the quotient downward (towards minus infinity) to an integer, and uses that quotient to compute the remainder.
+
+If divisor is zero, mod signals an arith-error error if both arguments are integers, and returns a NaN otherwise.
+
+
+
+
+
+
 ### **Conditionals**
 
 ```lisp
@@ -109,8 +123,17 @@ Ex.
 ### **Loops**
 
 **dolist**
+
+```lisp
+(dolist (variable list result)
+  sequence of expressions)
+```
 **dotimes**
 
+```lisp
+(dotimes (counter limit result)
+   sequence of expressions)
+```
 ## **Lists**
 
 **car** - 'Contents of the Address part of the Register
