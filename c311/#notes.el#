@@ -40,3 +40,4 @@ sqf
 (symbol-function 'xfirst) ; car
 (symbol-function (symbol-function 'xfirst))
 ; #<subr car>
+
