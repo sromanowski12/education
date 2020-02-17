@@ -6,8 +6,8 @@
 	],
 	"settings": {
 		"workbench.colorCustomizations": {
-			"activityBar.background": "#21221d",
-			"titleBar.activeBackground": "#21221d",
+			"activityBar.background": "#1C1B1A",
+			"titleBar.activeBackground": "#1C1B1A",
 			"titleBar.activeForeground": "#F5FEE0",
 			"favorites.sortDirection": "DESC",
 			"workbench.colorCustomizations": {
