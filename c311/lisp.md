@@ -2,6 +2,7 @@
   - [**Variables**](#variables)
   - [**Conditionals**](#conditionals)
   - [**Functions**](#functions)
+  - [**Grouping Expressions**](#grouping-expressions)
   - [**Equality Predicates**](#equality-predicates)
   - [**Input**](#input)
   - [**Output**](#output)
@@ -21,6 +22,9 @@
   - [**Map**](#map)
   - [**Dynamic Lambda**](#dynamic-lambda)
   - [**Function Indirection**](#function-indirection)
+  - [**Function eval**](#function-eval)
+- [**Name, Scope, Binding**](#name-scope-binding)
+  - [**Name**](#name)
 
 ## **_Lisp_**
 
@@ -39,6 +43,11 @@
 (if condition
     expression-if-true
     expressions-if-false)
+```
+
+```lisp
+(defun max (x y)
+  (if (> x y) x y))
 ```
 
 ### **Functions**
@@ -61,6 +70,27 @@ Ex.
       (+ (fib (- n 1))
          (fib (- n 2)))))
 ```
+
+### **Grouping Expressions**
+
+*specific to elisp*
+
+```lisp
+(progn expr1 expr2 ...)
+```
+
+
+**Complex Conditionals**
+```lisp
+(defun last (L)
+  (cond ((not L) nil)
+        ((not (cdr L)) (car L))
+        (t (last (cdr L)))))
+last
+
+(last L)
+```
+
 
 **Anonymous Functions**
 
@@ -104,7 +134,7 @@ Ex.
 
 ### **Input**
 
-**read**
+**read** - reads a value from a stream specified as argument and returns the value
 
 ### **Output**
 
@@ -333,9 +363,9 @@ A classification of entities one can find in a program by what can be done with 
 
 ### **Lambda Expressions**
 
-- Also called anonymous functions or methods. 
+- Also called **anonymous functions** or methods. 
 - They describe functions by directly describing their behavior.
-- Inspired from lambda calculus, a branch of mathematics that studies functions, recursion, computability. Invented by A. Church in 1930.
+- Inspired from **lambda calculus**, a branch of mathematics that studies functions, recursion, computability. Invented by A. Church in 1930.
 - Present in many languages: C#, Python, Perl.
 - Usually they mean the language allows first class functions.
 
@@ -372,6 +402,7 @@ TRUE := $\lambda xy. x$
 ```
 
 ### **Map**
+
 Applies a function to an entire list
 `(mapc function list)` applies the function to all the elements of the list for the side effect.
 `(mapcar function list)` applies the function to all the elements of the list and collects the result in a list that it returns.
@@ -435,6 +466,7 @@ Making a one-level copy of a list
 ```
 
 ### **Function Indirection**
+
 In a function call Lisp will follow a sequence of symbols until it finds a function
 ```lisp
 (defun g (x) (* x x)) ; g
@@ -449,6 +481,25 @@ In a function call Lisp will follow a sequence of symbols until it finds a funct
 (g2 5) ; 25
 ```
 
+### **Function eval**
+
+Evaluates an expression and returns its value. It performs one more level of indirection than the Ctrl-j.
+
+```lisp
+(setq a "hello") ; "hello"
+(setq b 'a)      ; a
+b                ; a
+(eval b)         ; "hello"
+(setq c 'b)      ; b
+(eval c)         ; a
+(eval a)         ; "hello"
+(eval 'a)        ; "hello"
+(eval 'b)        ; a
+```
+
+## **Name, Scope, Binding** 
+
+### **Name**
 ```lisp
 (with-open-file (stream (merge-pathnames #p"data.txt"
                                          (user-homedir-pathname))
@@ -460,6 +511,3 @@ In a function call Lisp will follow a sequence of symbols until it finds a funct
     (format stream "~3,3f~%" (random 100))))
 ```
 
-```lisp
-
-```

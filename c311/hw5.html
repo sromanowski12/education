@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <pre><code class="language-lisp"><div>(<span class="hljs-name">defun</span> gcd (<span class="hljs-name">n</span> m)
+  <span class="hljs-string">"Function to determine the greatest common divisor"</span>
+  (<span class="hljs-name">if</span> (<span class="hljs-name">&gt;</span> n m)
+      (<span class="hljs-name">let</span> ((<span class="hljs-name">dividend</span> n) (<span class="hljs-name">divisor</span> m) (<span class="hljs-name">remainder</span> <span class="hljs-number">1</span>))
+        (<span class="hljs-name">while</span> (<span class="hljs-name">not</span> (<span class="hljs-name">=</span> remainder <span class="hljs-number">0</span>))
+          (<span class="hljs-name">setq</span> remainder (% dividend divisor))
+          (<span class="hljs-name">setq</span> dividend divisor)
+          (<span class="hljs-name">setq</span> divisor remainder))
+        dividend)
+    (<span class="hljs-name">gcd</span> m n)))
+
+
+(<span class="hljs-name">setq</span> L '(<span class="hljs-number">3</span> <span class="hljs-number">1</span> <span class="hljs-number">5</span> <span class="hljs-number">6</span> <span class="hljs-number">3</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span>))
+(<span class="hljs-number">3</span> <span class="hljs-number">1</span> <span class="hljs-number">5</span> <span class="hljs-number">6</span> <span class="hljs-number">3</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span>)
+
+(<span class="hljs-name">setq</span> z <span class="hljs-number">3</span>)
+<span class="hljs-number">3</span>
+
+(<span class="hljs-name">setq</span> y <span class="hljs-number">9</span>)
+<span class="hljs-number">9</span>
+
+(<span class="hljs-name">defun</span> replace (<span class="hljs-name">L</span> z y)
+  (<span class="hljs-name">setq</span> k (<span class="hljs-name">lambda</span> (<span class="hljs-name">x</span>) (<span class="hljs-name">if</span> (<span class="hljs-name">=</span> x z) y x)))
+  (<span class="hljs-name">mapcar</span> k L))
+replace
+
+(<span class="hljs-name">replace</span> L z y)
+(<span class="hljs-number">9</span> <span class="hljs-number">1</span> <span class="hljs-number">5</span> <span class="hljs-number">6</span> <span class="hljs-number">9</span> <span class="hljs-number">2</span> <span class="hljs-number">9</span>)
+
+(<span class="hljs-name">defun</span> print-list (<span class="hljs-name">L</span>)
+  (<span class="hljs-name">mapc</span> (<span class="hljs-name">lambda</span> (<span class="hljs-name">x</span>) (<span class="hljs-name">princ</span> x) (<span class="hljs-name">princ</span> <span class="hljs-string">" "</span>)) L))
+print-list
+-
+(<span class="hljs-name">replace</span> L z y) <span class="hljs-comment">; (9 1 5 6 9 2 9)</span>
+
+(<span class="hljs-name">defun</span> print-list (<span class="hljs-name">L</span>)
+  (<span class="hljs-name">mapc</span> (<span class="hljs-name">lambda</span> (<span class="hljs-name">x</span>) (<span class="hljs-name">princ</span> x) (<span class="hljs-name">princ</span> <span class="hljs-string">" "</span>)) L))
+print-list
+
+<span class="hljs-comment">; Testing function: print-list</span>
+(<span class="hljs-name">print-list</span> L) <span class="hljs-comment">; 3 1 5 6 3 2 3 (3 1 5 6 3 2 3)</span>
+
+<span class="hljs-comment">; Testing function: print-list (w/ funcall)</span>
+(<span class="hljs-name">funcall</span> 'print-list L) <span class="hljs-comment">; 3 1 5 6 3 2 3 (3 1 5 6 3 2 3)</span>
+
+<span class="hljs-comment">; Testing function: replace (w/ apply)</span>
+(<span class="hljs-name">apply</span> 'replace (<span class="hljs-name">list</span> L z y)) <span class="hljs-comment">; (9 1 5 6 9 2 9)</span>
+
+<span class="hljs-comment">; Ex. 3 - List Manipulation</span>
+<span class="hljs-comment">; Ex. 3a - Function: make-multiples</span>
+(<span class="hljs-name">defun</span> make-multiples (<span class="hljs-name">n</span> m)
+  (<span class="hljs-name">if</span> (<span class="hljs-name">and</span> (<span class="hljs-name">&gt;</span> n <span class="hljs-number">0</span>) (<span class="hljs-name">&gt;</span> m <span class="hljs-number">0</span>))
+      (<span class="hljs-name">let</span> ((<span class="hljs-name">L</span> '()) (<span class="hljs-name">mult</span> m) (<span class="hljs-name">limit</span> m))
+        (<span class="hljs-name">dotimes</span> (<span class="hljs-name">count</span> limit result)
+          (<span class="hljs-name">setq</span> result (<span class="hljs-name">*</span> n mult))
+          (<span class="hljs-name">push</span> result L)
+          (<span class="hljs-name">setq</span> mult (<span class="hljs-number">1</span>- mult)))
+        L)
+    <span class="hljs-literal">nil</span>))
+make-multiples
+
+<span class="hljs-comment">; Testing function: make-multiples</span>
+(<span class="hljs-name">make-multiples</span> <span class="hljs-number">4</span> <span class="hljs-number">5</span>) <span class="hljs-comment">; (4 8 12 16 20)</span>
+
+<span class="hljs-comment">; Ex. 3b - Function: is-multiple</span>
+(<span class="hljs-name">setq</span> L '(<span class="hljs-number">4</span> <span class="hljs-number">8</span> <span class="hljs-number">12</span> <span class="hljs-number">16</span>))
+(<span class="hljs-number">4</span> <span class="hljs-number">8</span> <span class="hljs-number">12</span> <span class="hljs-number">16</span>)
+
+(<span class="hljs-number">3</span> <span class="hljs-number">5</span> <span class="hljs-number">7</span> <span class="hljs-number">9</span>)
+
+(<span class="hljs-number">3</span> <span class="hljs-number">6</span> <span class="hljs-number">9</span> <span class="hljs-number">12</span>)
+
+
+(<span class="hljs-name">defun</span> is-multiple (<span class="hljs-name">L</span>)
+  (<span class="hljs-name">cond</span>
+   ((<span class="hljs-name">not</span> L) <span class="hljs-literal">nil</span>)
+   ((<span class="hljs-name">not</span> (<span class="hljs-name">cdr</span> L)) <span class="hljs-literal">t</span>)
+   (<span class="hljs-name">t</span> (<span class="hljs-name">let</span> ((<span class="hljs-name">mult</span> <span class="hljs-number">2</span>) (<span class="hljs-name">i</span> (<span class="hljs-name">car</span> L)))
+        (<span class="hljs-name">dotimes</span> (<span class="hljs-name">count</span> (<span class="hljs-number">1</span>- (<span class="hljs-name">length</span> L)) result)
+          (<span class="hljs-name">setq</span> j (<span class="hljs-name">car</span> (<span class="hljs-name">cdr</span> L)))
+          (<span class="hljs-name">if</span> (<span class="hljs-name">=</span> j (<span class="hljs-name">*</span> i mult)) (<span class="hljs-name">setq</span> result <span class="hljs-literal">t</span>)
+            (<span class="hljs-name">setq</span> result <span class="hljs-literal">nil</span>)
+            (<span class="hljs-name">pop</span> L)
+            (<span class="hljs-name">setq</span> mult (<span class="hljs-number">1</span>+ mult))))
+        result))))
+is-multiple
+
+(<span class="hljs-name">is-multiple</span> L)
+<span class="hljs-literal">t</span>
+
+
+
+</div></code></pre>
+
+    </body>
+    </html>
