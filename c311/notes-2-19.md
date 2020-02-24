@@ -126,6 +126,104 @@ S  M  T  W  T  F  S
 
 ### **Object Allocation**
 
-- **Static Objects**
-- **Stack Objects**
-- **Heap Objects**
+- **Static Objects** - they have an absolute address that exists for the duration of the program
+  - Global variables, static local variables, runtime tables, function space for languages that don't support recursion, constants
+- **Stack Objects** - Last In, First Out (LIFO). Function space for languages that support recursion
+- **Heap Objects** - can be allocated an de-allocated at arbitrary times. Dynamically allocated parts of linked data structures, dynamically resized objects
+  - **Heap**: linked lists where the nodes can be of different sizes (of memory)
+
+
+### **Function Space**
+
+- The stack of function calls contains a *frame* for each function
+- One frame contains:
+  - arguments, return values
+  - local variables, elaboration-time constants
+    - ex. x = 2*y
+      - 2 is a constants
+  - temporaries: intermediate values produced in complex computations
+  - bookeeping information: return address, reference to the calling frame, debugging information
+
+```lisp
+(defun A (x) (* x x))
+(defun B (x y) (setq y (A x)))
+(defun C (n)
+  (if (= n 1) (B n 3)
+    (C (- n 1))))
+```
+
+### **Heap Management**
+
+- There is usually a linked list - *free list* of all the meory blocks not in use
+- When an allocation demand is made, the program searches the heap for a free block of at least the requested size
+- **First Fit** - returning the first block that fits the requested size
+- **Best Fit** - returning the smallest block that fits the request
+- **Worst Fit** - the largest block, to avoid fragmenting the memory
+- **Pool** - dividing the list into sublists by size
+- **Compact** - moving te allocating heaps closer together to create larger free blocks. When moving an object one needs to update all the references to it.
+
+### **Scope & Rules**
+
+- **Scope of binding**: the textual region of the program in which a binding is active
+- **Scope**: sometimes a region of a program of maximal size in which no binding changes scope
+- **Referencing Environment**the set of active bindings at any given point in the program execution
+- The scope of bindings is determined by *binding rules*, included in the description of the language
+
+### **Scope of a Binding**
+
+- Usually the scope of a binding is determined statically, meaning at compilation time
+- When a function is called that has a local variable, the binding between the variable name and the instance of the variable local to the call is created
+- Any previous bindings for that same variable name are deactivated in the process (or hidden)
+- When the function call ends, the previous binding for the name is restored
+
+### **Static Scope**
+
+- **Static Scope**
+  - Sometimes called *lexical scope*
+- **Current Binding**
+- **Global Scope**
+- **Local Static Scope**: for languages that do not support recursion and for static variables in other
+
+### **Nested Declarations**
+
+```lisp
+(let ((A 1))
+  (let ((A 2) (B A)) B)
+```
+
+- In Lisp the variables in a let are declared in parallel. In the above expression B is equal to 1
+
+
+Ex. **Dynamic Scope**
+```lisp
+(defvar y 3)     ; y is a global
+
+(defun f (x)
+  (+ x y))   ; we think f uses the global y
+(f 10) ; => 13
+
+(defun g ()
+  (let ((y 4) (a 1))
+    (f a)))
+(g) ; => 5   ; think again
+```
+
+### **Scope Implementation**
+
+- Static scope relies on a symbol table which is amap or dictionary.
+- Dynamic scope uses an association list or a cental reference table.
+- For dynamic scoping, it is a list of symbols (name) associated with the scope (value)
+
+
+### **Associative Lists**
+
+```lisp
+(setq flowers '((rose . red) (lily . white) (iris . purple)))
+
+(assoc 'lily flowers) ; (lily . white)
+(rassoc 'purple flowers) ; (iris . purple)
+
+```
+
+- *assq*, *rassq*  - same as *assoc* and *rassoc* but use *eq* instead of *equal*
+- **copy-alist** - a 2-level deep copy of the list

@@ -1,0 +1,6 @@
+(defun A (x) (* x x))
+
+(defun B (x y) (setq y (A x)))
+(defun C (n)
+  (if (= n 1) (B n 3)
+    (C (- n 1)))
