@@ -25,6 +25,8 @@
   - [**Function eval**](#function-eval)
 - [**Name, Scope, Binding**](#name-scope-binding)
   - [**Name**](#name)
+  - [**Arrays**](#arrays)
+  - [**Array Functions**](#array-functions)
 
 ## **_Lisp_**
 
@@ -519,6 +521,30 @@ b                ; a
 ## **Name, Scope, Binding** 
 
 ### **Name**
+
+### **Arrays**
+
+- An array is a sequence of continuous memory locations in which we can store objects of any kind
+- There are four types of arrays in Elisp: _strings, vectors, bool-vectors_, and _char-tables_
+- They are indexed starting from 0. In lisp they are 1-dimensionsal
+- Both lists and arrays are sequences
+
+### **Array Functions**
+
+**Constant Array**:
+```lisp
+(setq a '[1 2 3 45 65]) ; [1 2 3 45 65]
+```
+**Use the functions vector and make-vector**
+```lisp
+(setq b (vector 'a 32 nil '(1 2 3)))
+; [a 32 nil (1 2 3)]
+(setq sleepy (make-vector 5 'z))
+; [z z z z z]
+```
+**Concatenating Vectors**:
+
+
 ```lisp
 (with-open-file (stream (merge-pathnames #p"data.txt"
                                          (user-homedir-pathname))

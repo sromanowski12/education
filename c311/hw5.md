@@ -1,4 +1,10 @@
 ```lisp
+; Seth Romanowski
+; C311
+; Programming Languages
+
+; Ex. 1 - The while loop and the GCD (greatest common divisor)
+; Euclids algorithm. 
 (defun gcd (n m)
   "Function to determine the greatest common divisor"
   (if (> n m)
@@ -9,43 +15,42 @@
           (setq divisor remainder))
         dividend)
     (gcd m n)))
+gcd
+
+; Testing function: gcd
+(gcd 12 18)  ; 6
+(gcd 18 12)  ; 6
+(gcd 33 64)  ; 1
+(gcd 64 33)  ; 1
+(gcd 100 15) ; 5
+(gcd 15 100) ; 5
 
 
-(setq L '(3 1 5 6 3 2 3))
-(3 1 5 6 3 2 3)
-
-(setq z 3)
-3
-
-(setq y 9)
-9
-
+; Ex. 2 - Lambda Expression
 (defun replace (L z y)
   (setq k (lambda (x) (if (= x z) y x)))
   (mapcar k L))
 replace
 
-(replace L z y)
-(9 1 5 6 9 2 9)
-
-(defun print-list (L)
-  (mapc (lambda (x) (princ x) (princ " ")) L))
-print-list
--
-(replace L z y) ; (9 1 5 6 9 2 9)
+; Testing function: replace
+(replace '(3 1 5 6 3 2 3) 3 9)
+; (9 1 5 6 9 2 9)
 
 (defun print-list (L)
   (mapc (lambda (x) (princ x) (princ " ")) L))
 print-list
 
 ; Testing function: print-list
-(print-list L) ; 3 1 5 6 3 2 3 (3 1 5 6 3 2 3)
+(print-list '(3 1 5 6 3 2 3)) 
+; 3 1 5 6 3 2 3 (3 1 5 6 3 2 3)
 
 ; Testing function: print-list (w/ funcall)
-(funcall 'print-list L) ; 3 1 5 6 3 2 3 (3 1 5 6 3 2 3)
+(funcall 'print-list '(3 1 5 6 3 2 3)) 
+; 3 1 5 6 3 2 3 (3 1 5 6 3 2 3)
 
 ; Testing function: replace (w/ apply)
-(apply 'replace (list L z y)) ; (9 1 5 6 9 2 9)
+(apply 'replace (list '(3 1 5 6 3 2 3) 3 9))
+; (9 1 5 6 9 2 9)
 
 ; Ex. 3 - List Manipulation
 ; Ex. 3a - Function: make-multiples
@@ -61,17 +66,10 @@ print-list
 make-multiples
 
 ; Testing function: make-multiples
-(make-multiples 4 5) ; (4 8 12 16 20)
+(make-multiples 4 5)
+; (4 8 12 16 20)
 
 ; Ex. 3b - Function: is-multiple
-(setq L '(4 8 12 16))
-(4 8 12 16)
-
-(3 5 7 9)
-
-(3 6 9 12)
-
-
 (defun is-multiple (L)
   (cond
    ((not L) nil)
@@ -86,9 +84,8 @@ make-multiples
         result))))
 is-multiple
 
-(is-multiple L)
-t
-
-
-
+; Testing function: is-multiple
+(is-multiple '(4 8 12 16)) ; t
+(is-multiple '(3 5 7 9))   ; nil
+(is-multiple '(3 6 9 12))  ; t
 ```
