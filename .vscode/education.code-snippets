@@ -25,5 +25,17 @@
 			"```"
 		],
 		"description": "Insert a Lisp code block"
+	},
+	"Insert SQL": {
+		"scope": "markdown",
+		"prefix": "ins lisp",
+		"body": [
+			"```sql",
+			"",
+			"```"
+		],
+		"description": "Insert a SQL code block"
 	}
+
+
 }
