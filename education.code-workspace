@@ -16,7 +16,7 @@
 				"titleBar.activeForeground": "#FDFCFE"
 			}
 		},
-		"calendar.google.credentialsFile": "C:\\Users\\sroma\\Downloads\\credentials.json",
+		"calendar.google.credentialsFile": "C:\\Users\\sroma\\source\\repos\\projects\\credentials.json",
 		"todoist.projectId": "2186180109"
 	}
 }
