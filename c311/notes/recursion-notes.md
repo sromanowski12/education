@@ -1,5 +1,4 @@
-
-
+ ## **Recursion Notes**
 
 **Flat Recursion**
 
@@ -103,12 +102,6 @@ count-all-symbols
 (depth '((a b (c d) e) f g (h i (j)))) ; 3
 ```
 
-Here we see a function called depth implemented using deep recursion, that checks the level of nesting happening in the list. An empty list will have a depth of 0. A flat list, with no nesting, but with some elements in it, will have a depth of 1. If we add a nested list inside the structure, the depth increases to 2, and so on. For the example that we see here, the depth is 3 because the sublist (c d) is nested inside a list that is nested inside the bigger list. 
-
-We can see the important part highlighted here: we have to check if the first element of the list is a list, and if it is, we call the function recursively both on the car of the list and on the cdr of the list. Then we add 1 to the result of the car, because if we’re calling the function on the car, then that is already 1 level nested into L. The call on the cdr doesn’t get anything added to it because the cdr is part of the original list and not nested inside it. The values from the two branches are compared to each other, and the larger of the two is returned. 
-
-Then if the car of the list is not a list, we make a call on the cdr, then return the larger between the depth of the cdr and 1. This is because when the cdr becomes nil, the function returns 0, and we don’t want that to propagate back through the recursive calls. Plus, if we’re making the call on the cdr, then the list has at least one element, which means that the depth is at least 1. But we could find some more nesting happening in the cdr that would make it higher. 
-
 **Recursion Tree**
 A tree with a node for each recursive call and where the children of a node are the recursive calls it generates. 
 
@@ -139,9 +132,4 @@ A tree with a node for each recursive call and where the children of a node are 
 
 (deepcopy '(a (b c (d)) e (f g)) 3)
 ; (a (b c (d)) e (f g))
-```
-
-```lisp
-(defun search (L val)
-      )
 ```
