@@ -28,6 +28,7 @@
   - [**Arrays**](#arrays)
   - [**Array Functions**](#array-functions)
 
+
 ## **_Lisp_**
 
 ### **Variables**
@@ -356,15 +357,15 @@ A classification of entities one can find in a program by what can be done with 
 
 ### **Second Class Objects**
 
-- Values / entities that don’t have a literal expression or cannot be created dynamically.
+- Values / entities that don't have a literal expression or cannot be created dynamically.
 - They can be passed as function parameters, but not returned from a function, nor assigned to a variable.
 - In C structs are second class because there is no literal expression for them.
-- In Java the type int is second class because you can’t inherit from it. Integer is first class.
+- In Java the type int is second class because you can't inherit from it. Integer is first class.
 
 ### **Third Class Objects**
 
 - Entities that cannot be stored in variables, nor used as parameters, nor returned from functions.
-- goto: labels in C because they don’t have values associated with them.
+- goto: labels in C because they don't have values associated with them.
 - Basic types in C++ (the type, not the values of that type).
 
 ### **First Class Functions**
@@ -439,7 +440,7 @@ Applies a function to an entire list
 10
 ; Dynamic Lambda
 (setq f (append '(lambda (x))
-		(list (list '+ 'x n))))
+        (list (list '+ 'x n))))
 ; (lambda (x) (+ x 10))
 (mapcar f '(1 2 3)) ; (11 12 13)
 (funcall f 2) ; 12
@@ -456,7 +457,7 @@ Making a one-level copy of a list
 (defun my-copy (L)
   (mapcar (lambda (x) x) L))
 
-(setq L ‘(1 2 3 4))   ;=>   (1 2 3 4)
+(setq L '(1 2 3 4))   ;=>   (1 2 3 4)
 (setq M (my-copy L))  ;=>   (1 2 3 4)
 (eq L M)     ;=>  nil
 (equal L M)  ;=>  t

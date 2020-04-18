@@ -23,6 +23,14 @@
 - **[Notes](/a340/notes)**
   - **[Images](/a340/notes/images)**
 
+## **[CSCI-C311](/c311)**
+**[Programming Languages](https://iu.instructure.com/courses/1792645)**
+
+- **[About](/c311/)**
+- **[Assignments](/c311/assignments)**
+- **[Notes](/c311/notes)**
+  - **[Images](/c311/notes/images)**
+
 ## **[INFO-I303](/i303)**
 **[Management of Information Systems](https://iu.instructure.com/courses/1792645)**
 
