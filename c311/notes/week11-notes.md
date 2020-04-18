@@ -105,6 +105,7 @@ As we can see, this function has two loops, and no labels.
 ### **Combinations**
 
 C(n, m) = n! / (m! (n-m)!)
+
 C(n, m) = C(n-1, m) + C(n-1, m-1)
 
 **Combinations - Version 1**
@@ -145,3 +146,5 @@ C(n, m) = C(n-1, m) + C(n-1, m-1)
         (setq result (+ result left-res)))))
     result))
 ```
+
+  
