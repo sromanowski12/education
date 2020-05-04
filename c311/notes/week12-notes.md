@@ -28,30 +28,24 @@
   - we say that the rule _**expands**_ the symbol NT.
 
 
-### **Types of Grammars**
-#### **Type 0**
-#### **Type 1**
-#### **Type 2**
-#### **Type 3**
+### _**Types of Grammars**_
 
-I => letter J
+#### **Type 0**: (unrestricted)
+#### **Type 1**: *context-sensitive*
+#### **Type 2**: *context-free*
+#### **Type 3**: **regular grammar**
 
-J => letter J
+### **Regular Grammars**
 
-J => digit J
+#### **DFA vs. NFA**
+- **Deterministic Finite State Automation (DFA)**
+  - l
 
-J => _ J
+- **Non-Deterministic Finite State Automation (NFA)**
+  - l
 
-J => - J
 
-J => e
-
-Condense the rules:
-
-J => { _ | - } J
-
-where e is the empty string.
-
+#### **NFA to DFA**
 
 
 **Table Driven Scanner**
