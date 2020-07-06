@@ -227,3 +227,92 @@ Ex. **Dynamic Scope**
 
 - *assq*, *rassq*  - same as *assoc* and *rassoc* but use *eq* instead of *equal*
 - **copy-alist** - a 2-level deep copy of the list
+  
+```lisp
+(defun copyalist (L)
+  "Copies an associative list."
+  (let ((newlist ()))
+    (dolist (e L newlist)
+      (setq newlist
+            (append newlist
+                    (list (cons (car e)
+                                (cdr e) 
+                          )))))))
+```
+
+```lisp
+(defun setassoc (sym val L)
+  "Associates the value with the symbol in the list L."
+  (setcdr (assoc sym L) val))
+```
+
+## **Recursion**
+
+**Control Flow**
+- **Squencing**
+- **Selection**: alternation - a type of conditional
+- **Iteration**: code executed repeatedly
+- **Procedural Abstraction**: encapsulating a collection of control constructs in a unit
+  - aka Functions or Methods
+- **Recursion**: an expression defined in terms of itself
+- **Concurrency**: two or more fragments of code being executed / evaluated at the same time
+
+**General**: any self-referencing expression
+**In computing**: 
+**Outline**:
+- a recusrive function:
+  - base case - the answer is easy to find; they are also called terminating conditions
+  - then it breaks down the problem into smaller ones that can be solved by recursive calls
+
+```lisp
+(defun search (target L)
+  (if (not L)
+      nil
+    (if (equal (car L) target)
+	t
+      (search target (cdr L)))))
+search
+
+(search 4 '(1 2 3 4))
+t
+
+
+(defun factorial (n)
+  (if (< n 2) 1
+    (* n (factorial (- n 1)))))
+factorial
+
+(factorial 4)
+24
+```
+
+**Recursion vs. Iteration**
+- equally powerful
+- iteration is more natural in imperative languages
+- recursion is more natural in declarative languages
+
+**Recursion Tree**
+
+fib(8)
+
+
+**Tail Recursion**
+
+**Arrays in Lisp**
+- 4 types of arrays:
+  - strings
+  - vectors
+  - bool-vectors
+  - char-tables
+- They are indexed starting from 0
+
+**Array Functions**
+- **Constant Arrays**
+  ```lisp
+  (setq a '[1 2 3 4 5]) ; [1 2 3 4 5]
+
+  ```
+- **Constant Arrays**
+  ```lisp
+  (setq b (vector 'a 32 nil '(1 2 3)))
+  ```

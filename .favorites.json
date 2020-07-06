@@ -15,5 +15,31 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "8hI3RfWU6St9MzjF"
+    },
+    {
+        "type": "Group",
+        "name": "Work",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "pWrsL4HNZjlzQgh0"
+    },
+    {
+        "type": "Directory",
+        "name": "C:\\Users\\sromanowski\\Documents\\BuyDesign\\EQ",
+        "parent_id": "pWrsL4HNZjlzQgh0",
+        "fsPath": "C:\\Users\\sromanowski\\Documents\\BuyDesign\\EQ",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "g4ZUyDGfdSQWIJrx"
+    },
+    {
+        "type": "Directory",
+        "name": "C:\\Users\\sromanowski\\Documents\\BuyDesign",
+        "parent_id": null,
+        "fsPath": "C:\\Users\\sromanowski\\Documents\\BuyDesign",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "UkoH3QqYBun1APlw"
     }
 ]
