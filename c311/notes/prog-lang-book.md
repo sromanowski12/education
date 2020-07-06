@@ -1,3 +1,8 @@
+ch. 2
+2.1 - Specifying Syntax
+- 2.1.1 - Tokens & Regular Expressions
+- 2.1.2 - Context-Free Grammars (CFGs)
+
 ch. 10 Functional Languages
 10.1 - Historical Origins
 10.2
