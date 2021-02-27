@@ -1,7 +1,11 @@
-public class testList
-{
+public class example {
     public static void main(String[] args)
     {    
+        // node temp1 = new node(1,"Seth",3.3);
+        // String v1 = temp1.name;
+        // System.out.println(v1);
+        // System.out.println("\n After operation:");
+
         AccountList AL = new AccountList();
         
         AL.addFront(1001, "John Kelly", 999.88);
@@ -14,21 +18,8 @@ public class testList
         AL.updateBalance(1001, 2000);
         System.out.println("\n After operation:");
         AL.listAll();
+
+
+
     }
 }
-
-/*
-if your classes are implemented correctly, you should see:
-
-Before operation:
-4004 John Smith 1300.0
-2002 James Smith 200.0
-3003 Jane Smith 100.0
-1001 John Kelly 999.88
-
- After operation:
-4004 John Smith 1300.0
-2002 James Smith 200.0
-3003 Jane Smith 100.0
-1001 John Kelly 2000.0
-*/

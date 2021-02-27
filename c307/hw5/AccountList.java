@@ -55,35 +55,35 @@ public class AccountList
             addFront(n, s, b);
             isOrdered = true;
         }
-        else
-        {
-            int firstValue = head.balance;
-            if(b <= firstValue)
-            {
-                temp = head;
-                addFront(n, s, b);
-                head.next = temp;
-                isOrdered = true;
-            }
-            else
-            {
-                temp = head;
-                node t1 = head;
-                node t2 = head.next;
+        // else
+        // {
+        //     int firstValue = head.balance;
+        //     if(b <= firstValue)
+        //     {
+        //         temp = head;
+        //         addFront(n, s, b);
+        //         head.next = temp;
+        //         isOrdered = true;
+        //     }
+        //     else
+        //     {
+        //         temp = head;
+        //         node t1 = head;
+        //         node t2 = head.next;
 
-                while(temp!=null)
-                {
-                    if(b > t2.balance && t2 != null)
-                    {
-                        t1 = t2;
+        //         while(temp!=null)
+        //         {
+        //             if(b > t2.balance && t2 != null)
+        //             {
+        //                 t1 = t2;
                         
-                    }
+        //             }
 
-                    temp = temp.next;
-                }
-            }
+        //             temp = temp.next;
+        //         }
+        //     }
 
-        }
+        // }
     }
     
     public void remove(String name)
