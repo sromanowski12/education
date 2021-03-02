@@ -6,20 +6,23 @@ public class example {
         // System.out.println(v1);
         // System.out.println("\n After operation:");
 
-        AccountList AL = new AccountList();
+     //   AccountList AL = new AccountList();
         
-        AL.addFront(1001, "John Kelly", 999.88);
-        AL.addFront(3003, "Jane Smith", 100);
-        AL.addFront(2002, "James Smith", 200);
-        AL.addFront(4004, "John Smith", 1300);
+        // AL.addFront(1001, "John Kelly", 999.88);
+        // AL.addFront(3003, "Jane Smith", 100);
+        // AL.addFront(2002, "James Smith", 200);
+        // AL.addFront(4004, "John Smith", 1300);
        
-        System.out.println("Before operation:");
-        AL.listAll();  
-        AL.updateBalance(1001, 2000);
-        System.out.println("\n After operation:");
-        AL.listAll();
+        // System.out.println("Before operation:");
+        // AL.listAll();  
+        // AL.updateBalance(1001, 2000);
+        // System.out.println("\n After operation:");
+        // AL.listAll();
 
-
+        RuleList rules = new RuleList();
+        rules.addFront(36191, "Outer Skin MFG Mtl", "MFG-MTL");
+        rules.addFront(36197, "Inner Skin MFG Mtl", "MFG-MTL");
+        rules.listAll();
 
     }
 }
