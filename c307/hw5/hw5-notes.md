@@ -1,11 +1,17 @@
 
-How to Create a Linked List
+# How to Create a Linked List
+
 1. Define the node
+
 - class node
   - node next
+  
 2. Define the list
+
 - class list
   - node head
+
+
 
 class testList
 - contains `main`

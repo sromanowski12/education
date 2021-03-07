@@ -1,0 +1,48 @@
+node Collection
+- Attributes:
+ex. int value, node next;
+- Constructors / Functions:
+ex. node(int v) { value=v; next=null; }
+
+// node Collection Definition
+node =CreateSet() // Defines the node Collection
+node["VALUE"] = null // Initializes the VALUE attribute to NULL
+node["NEXT"] = null // Initialize 
+
+next =CreateSet() // Defines the next Collection
+next = node
+node["NEXT"] = next;
+
+
+Step 1:
+node
+{
+    value: null,
+    next:
+    {
+
+    }
+}
+
+next
+{
+    value: null,
+    next: 
+    {
+
+    }
+}
+
+Step 2:
+node
+{
+    value: null,
+    next:
+    {
+        value: null,
+        next:
+        {
+            
+        }
+    }
+}

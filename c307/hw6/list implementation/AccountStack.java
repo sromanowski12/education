@@ -1,27 +1,36 @@
-public class AccountStack
-{
+// Seth Romanowski
+// INFO-C307
+// 3/7/21
+// HW6 - class AccountStack
+// Linked-list based stack implementation
+
+public class AccountStack {
     private AccountNode top;
 
     public AccountStack()
     {
         top = null;
     }
-
+	
     private boolean isEmpty()
     {
         if(top==null) return true;
-        else return false;
+	    else return false;
     }
-
-    public void push(int v, String s, double b)
+	
+    public void push(AccountNode n)
     {
-        AccountNode n = new AccountNode(v, s, b);
+        // your code goes here:
+        // push AccountNode n to the top of stack 
         n.next = top;
         top = n;
     }
-
+	
     public AccountNode pop()
     {
+        // your code goes here:
+        // return the data item at the top of stack
+        // if stack is empty, retun null
         if(isEmpty()==true) return null;
         else
         {
