@@ -1,6 +1,6 @@
 public class AccountStack
 {
-    private node top;
+    private AccountNode top;
 
     public AccountStack()
     {
@@ -15,7 +15,7 @@ public class AccountStack
 
     public void push(int v, String s, double b)
     {
-        node n = new node(v, s, b);
+        AccountNode n = new AccountNode(v, s, b);
         n.next = top;
         top = n;
     }
