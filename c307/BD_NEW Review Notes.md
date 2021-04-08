@@ -1,0 +1,40 @@
+
+REPLACE / REMOVE SKINS
+- OVERRIDE SKINS
+  - Item coverage issues
+
+039 - WARRANTY SKINS
+1. Check inner/outer skins for WAR only
+2. If skin value from BD_SPOUTSKIN / BD_SPINSKIN, then check ["WAR"]
+3. If skin value from BD_SKIN_OUTER_V1 / BD_SKIN_INNER_V1, then check ["WAR"]
+
+058 - WARRANTY SKINS
+- If WAR then check to see if other skin sizes available
+
+
+O-OUTER_SKIN
+
+- .VALUE.SkinType = {"PRECUT", "SHEET", "COIL", "OTHER"}
+- .VALUE.OBS = {"ACTIVE", "REMOVE", "REPLACE"}
+- .VALUE.SK_WIDTH, .VALUE.SK_HEIGHT, .VALUE.SK_SQF
+- .VALUE.PN
+- .VALUE.WAR
+- .VALUE.ALUM
+
+
+O-INNER_SKIN
+
+
+G-SPOUTSKIN,G-SPINSKIN
+
+
+- SPOUTSKIN, SPINSKIN
+
+SKIN_OUTER, SKIN_INNER
+
+Matrices:
+- BD_SKIN_OUTER_V1 / BD_SKIN_INNER_V1
+  - SKIN_OUTER / SKIN_INNER
+
+- BD_SPOUTSKIN / BD_SPINSKIN
+  - SPOUTSKIN, SPINSKIN
