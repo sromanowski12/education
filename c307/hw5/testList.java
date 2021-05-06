@@ -12,7 +12,8 @@ public class testList
        
         System.out.println("Before remove operation:");
         AL.listAll();  
-        AL.remove("James Smith");
+       // AL.remove("James Smith");
+       AL.removeSecond();
         System.out.println("\n After remove operation:");
         AL.listAll();
 

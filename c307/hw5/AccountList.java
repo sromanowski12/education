@@ -126,4 +126,21 @@ public class AccountList
             // else do nothing: keep the first node
         }
     }
+
+    public void removeSecond()
+    {
+        if(head == null || head.next == null) return;
+        else {
+            node t1 = head;
+            node t2 = t1.next;
+            if(t2.next == null)
+            {
+                t1.next = null;
+            }
+            else {
+                node temp = t2.next;
+                t1.next = temp;
+            }
+        }
+    }
 }

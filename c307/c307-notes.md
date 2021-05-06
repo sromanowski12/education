@@ -13,7 +13,7 @@ Assignment:
 1. Hash Table:
   
   - Must be dynamically allocated
-  - The constructor for the hash table should be able to accept an integer (n>=2) parameter and creates a hash table such that the size of the table is equal to the next prime number (N) which is greater than (n)
+  - The constructor for the hash table should be able to accept an integer (n>=2) parameterand creates a hash table such that the size of the table is equal to the next prime number (N) which is greater than (n)
 
 2. Hash Function:
 

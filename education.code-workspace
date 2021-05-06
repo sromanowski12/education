@@ -17,6 +17,9 @@
 			}
 		},
 		"calendar.google.credentialsFile": "C:\\Users\\sroma\\source\\repos\\projects\\credentials.json",
-		"todoist.projectId": "2186180109"
+		"todoist.projectId": "2186180109",
+		"java.project.sourcePaths": [
+			"c307/hw5"
+		]
 	}
 	}

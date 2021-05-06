@@ -3,37 +3,10 @@
 // 4/3/21
 // HW9 - class hashtable
 
-// Assignment: build hash tables to store the account object
-// -- int account_number, String name, double balance
-// 1. Hash Table
-// -- Must be dynamically allocated
-// -- Constructor for the hash table should be able to accept an integer (n>=2) as a parameter & creates a hash table such that the size of the table is equal to the next prime number (N) which is greater than (n)
-// 2. Hash Function: used to produce a semi-unique address for a given key to be stored in the hash table.
-// -- *In this assignment, account_number and name are used together as a composite key
-// -- Hash code map: (key --> integer) - account_number + summation of the ASCII values of each character in string name
-// --- To cast a char C to an int j, you can use: int j = (int) C;
-// -- Compression map: (integer --> [0, N-1]) - i = integer % N
-// --- i is the index of the hash table the account will be hashed into
-// 3. Collision Resolution: often multiple keys could hash into the same hash table locations. In such cases we must be able to deal with the collision.
-// -- For this assignment, you are required to use chaining collision resolution w/ an unsorted linked list
-// 4. 3 classes
-// -- class account, class hashtable, class test
-// 5. Constructor of the hashtable class
-// -- Creates an array of size N
-// 6. Structure of the hash table
-// -- Each array index contains head to an unsorted linked list of account
-// 7. hashtable class should support the following operations:
-// -- void insert()
-// -- void remove()
-// -- account search()
-// 8. Test
-
 public class hashtable
 {
-    // change back to private
-    public account[] array;
-    // change back to private
-    public int size;
+    private account[] array;
+    private int size;
 
 	// hashtable Constructor - takes one parameter, int n
     public hashtable(int n)
