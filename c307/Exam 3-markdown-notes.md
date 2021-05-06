@@ -20,6 +20,9 @@ Solve a collision resolution problem w/ **open addressing**, including **linear 
 - *Pay attention to slides 9 - 23 in Lecture 16*
 
 
+### **HashTable**
+
+
 ### Table Operations
 - **Insert**: make sure that the table does not contain another object w/ the same key 
 - **Find/Access**: retrieve the object in the table corresponding to a particular key
