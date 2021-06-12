@@ -1,0 +1,19 @@
+
+
+ProductCatalogItem.AddItem
+ProductCatalogItem_AddToQuote
+ProductCatalogItem.CreateProductCatalogLine
+ProductCatalogItem.GoToQuoteOrder
+DirectQuote.ConvertToOrder
+QuoteLine_ConvertToOrderLine
+DirectQuoteLine.ConvertToOrderLine
+UpdateLastKnownGoodConfiguration
+QuoteOrder_ValidatePricing
+ManufacturerOrderLine.FinishRapidChangeBackgroundConfiguration
+DirectQuote.CompletePartialOrder
+ManufacturerOrderLine.FinishRapidChangeBackgroundConfiguration
+
+### 20.5
+
+
+### 21.2
