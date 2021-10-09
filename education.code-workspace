@@ -37,6 +37,6 @@
 				"username": "root"
 			}
 		],
-		"vscode-office.autoTheme": true
+		"vscode-office.autoTheme": false
 	}
 	}
