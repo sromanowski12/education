@@ -20,6 +20,23 @@
 		"todoist.projectId": "2186180109",
 		"java.project.sourcePaths": [
 			"c307/hw5"
-		]
+		],
+		"toggl.apiKey": "715540d205fe56445dd6f40edb1b0907",
+		"sqltools.connections": [
+			{
+				"mysqlOptions": {
+					"authProtocol": "default"
+				},
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 3306,
+				"askForPassword": true,
+				"driver": "MySQL",
+				"name": "localhost",
+				"database": "cape_codd",
+				"username": "root"
+			}
+		],
+		"vscode-office.autoTheme": true
 	}
 	}
