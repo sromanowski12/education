@@ -37,6 +37,7 @@
 				"username": "root"
 			}
 		],
-		"vscode-office.autoTheme": false
+		"vscode-office.autoTheme": false,
+		"voiceSnippets.serverPort": 5500
 	}
 	}
