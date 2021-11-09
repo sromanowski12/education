@@ -46,4 +46,13 @@ If the FD is valid n the cape_codd.order_item table, then if two inventory items
 
 7.0.4 - (Submit SQL statement) Write a SQL JOIN statement which denormalizes the three tables and join the order-relevant data from the following three tables.
 
+cape_codd.retail_order
+- OrderNumber, StoreNumber, StoreZip, OrderMonth, OrderYear, OrderTotal
+  
+cape_codd.order_item
+- OrderNumber, SKU, Quantity, Price, ExtendedPrice
+
+cape_codd.sku_data
+- SKU, SKU_Description, Department, Buyer
+
 7.0.5 - (Submit a paragraph which describes the whole process in the video. Identifying relationship type between FLIGHT and PASSENGER and tranforming the many-to-many relationship to relational mode in BCNF.)
