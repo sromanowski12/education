@@ -43,14 +43,6 @@ alter table n_sku
 
 -- show create table SKUS; 
 
-
-
--- Denormalize tables
-select sku, sku_description, buyer, department
-from n_sku s join n_buyer b
-on s.buyer_id = b.buyer_id
-;
-
 -- 7.0.4 - Write a SQL JOIN statement which denormalizes the three tables and join the order-relevant data from the following three 
 -- tables. cape_codd.retail_order, cape_codd.order_item, cape_codd.sku_data 
 
