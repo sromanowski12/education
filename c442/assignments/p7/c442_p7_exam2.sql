@@ -54,6 +54,14 @@ on s.buyer_id = b.buyer_id
 -- 7.0.4 - Write a SQL JOIN statement which denormalizes the three tables and join the order-relevant data from the following three 
 -- tables. cape_codd.retail_order, cape_codd.order_item, cape_codd.sku_data 
 
+drop table if exists retail_orderItem_sku;
+create table if not exists retail_orderItem_sku
+    select o.OrderNumber AS OrderNumber, o.StoreNumber, o.StoreZip, o.OrderMonth, o.OrderYear, o.OrderTotal,
+        i.OrderNumber AS OrderNumber2, i.SKU, i.Quantity, i.Price, i.ExtendedPrice,
+        s.SKU AS SKU2, s.SKU_Description, s.Department, s.Buyer
+    from retail_order o
+        join order_item i on o.OrderNumber = i.OrderNumber
+        join sku_data s on i.SKU = s.SKU;
 
 
 
