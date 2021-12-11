@@ -22,9 +22,32 @@
 			"c307/hw5"
 		],
 		"toggl.apiKey": "715540d205fe56445dd6f40edb1b0907",
-		"sqltools.connections": [],
+		"sqltools.connections": [
+			{
+				"mssqlOptions": {
+					"appName": "SQLTools",
+					"useUTC": true,
+					"encrypt": true
+				},
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 1433,
+				"driver": "MSSQL",
+				"name": "SQL Server Express",
+				"username": "NT Service\\MSSQL$SQLEXPRESS",
+				"database": "SQLEXPRESS",
+				"password": ""
+			}
+		],
 		"vscode-office.autoTheme": false,
 		"voiceSnippets.serverPort": 5500,
-		"markdown-preview-enhanced.codeBlockTheme": "atom-dark.css"
+		"markdown-preview-enhanced.codeBlockTheme": "atom-dark.css",
+		"azdoPullRequests.orgUrl": "https://dev.azure.com/lippert-cpq/",
+		"azdoPullRequests.projectName": "EQ",
+		"markdown.extension.print.theme": "dark",
+		"markdown.styles": [
+			"dark-material.css"
+		],
+		"editor.acceptSuggestionOnCommitCharacter": false
 	}
 	}
