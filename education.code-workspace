@@ -48,6 +48,11 @@
 		"markdown.styles": [
 			"dark-material.css"
 		],
-		"editor.acceptSuggestionOnCommitCharacter": false
+		"editor.acceptSuggestionOnCommitCharacter": false,
+		"azure-work-management.personal-access-token": "qprp4sgnfs7w43niioyoluk3s5uuxst3ddqaa5kt4qtxrfpgwgea",
+		"azure-work-management.project": "EQ",
+		"azure-work-management.team": "EQ Team",
+		"azure-work-management.iteration": "EQ\\Backlog\\CPQ_2021_24",
+		"azure-work-management.organization": "lippert-cpq"
 	}
 	}
