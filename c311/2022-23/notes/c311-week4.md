@@ -58,3 +58,14 @@ Stack-Based Allocation
   - Temporaries
   - Bookkeeping (saved registers, line number static link, etc.)
 - Each stack frame is allocated for each subroutine
+Heap Management Algorithms
+
+Scope Rules
+- Scope of a Binding:
+- Scope:
+
+On subroutine entry:
+On subroutine exit:
+
+Static (Lexical) Scope Rules
+Static Scope Rules: Example
