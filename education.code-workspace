@@ -45,14 +45,21 @@
 		"azdoPullRequests.orgUrl": "https://dev.azure.com/lippert-cpq/",
 		"azdoPullRequests.projectName": "EQ",
 		"markdown.extension.print.theme": "dark",
-		"markdown.styles": [
-			"dark-material.css"
-		],
 		"editor.acceptSuggestionOnCommitCharacter": false,
-		"azure-work-management.personal-access-token": "qprp4sgnfs7w43niioyoluk3s5uuxst3ddqaa5kt4qtxrfpgwgea",
-		"azure-work-management.project": "EQ",
-		"azure-work-management.team": "EQ Team",
-		"azure-work-management.iteration": "EQ\\Backlog\\CPQ_2021_24",
-		"azure-work-management.organization": "lippert-cpq"
+		"azure-work-management.personal-access-token": "3vxgzlqzughoo7fixa67bg4dscbcr5ixgyd3xfhkjawstplnuzvq",
+		"azure-work-management.project": "Enterprise Quoting",
+		"azure-work-management.team": "Enterprise Quoting Team",
+		"azure-work-management.iteration": "Enterprise Quoting\\CPQ_2022_3",
+		"azure-work-management.organization": "SCPTechnicalServices",
+		"markdown.preview.linkify": false,
+		"markdown.preview.openMarkdownLinks": "inEditor",
+		"markdown-preview-github-styles.colorTheme": "system",
+		"markdown-preview-enhanced.enableLinkify": false,
+		"markdown-preview-enhanced.previewTheme": "none.css",
+		"code-runner.executorMap": {
+			"racket": "racket"
+	
+		}
+		
 	}
 	}
