@@ -1,3 +1,5 @@
+## Week 3 - Functions
+
 Function Calls as Procedure Applications
 - Function calls we have seen are prcedure applications
 - It's syntax is 
