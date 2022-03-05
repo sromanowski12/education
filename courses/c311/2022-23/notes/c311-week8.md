@@ -315,3 +315,12 @@ Target Code Generation
 
 Code Improvement (Optimization)
 
+
+| Team   | # of Students | Project Assigned                    | Presentation Schedule |
+|--------|---------------|-------------------------------------|-----------------------|
+| Team 1 | 4             | Drawing a Zoo                       | Week 14               |
+| Team 2 | 4             | Drawing a Zoo                       | Week 14               |
+| Team 3 | 3             | Dynamic Programming for Rod-Cutting | Week 14               |
+| Team 4 | 4             | Drawing a City                      | Week 15               |
+| Team 5 | 3             | Building a Simple Blog              | Week 15               |
+| Team 6 | 3             | Building a Simple Blog              | Week 15               |
