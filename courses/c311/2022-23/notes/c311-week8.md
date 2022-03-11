@@ -1,3 +1,35 @@
+- [C311 Overview](#c311-overview)
+  - [Week 1 - Introduction to Racket](#week-1---introduction-to-racket)
+    - [Reading:](#reading)
+    - [Notes:](#notes)
+  - [Week 2 - Racket: Basics](#week-2---racket-basics)
+    - [Reading:](#reading-1)
+    - [Notes:](#notes-1)
+  - [Week 3 - Racket: Functions](#week-3---racket-functions)
+    - [Reading:](#reading-2)
+    - [Notes:](#notes-2)
+      - [General Function Calls](#general-function-calls)
+      - [Anonymous `lambda` Function](#anonymous-lambda-function)
+  - [Week 3 - First Class Objects](#week-3---first-class-objects)
+  - [Week 4 - Racket: Scope & Binding](#week-4---racket-scope--binding)
+    - [Reading:](#reading-3)
+    - [Notes:](#notes-3)
+  - [Week 4 - Scope Binding](#week-4---scope-binding)
+  - [Week 5 - Racket: Lists, Iteration, Recursion](#week-5---racket-lists-iteration-recursion)
+    - [Reading:](#reading-4)
+    - [Notes:](#notes-4)
+      - [Functions](#functions)
+  - [Week 5 - Recursion](#week-5---recursion)
+  - [Week 6 - **Exam Week**](#week-6---exam-week)
+  - [Week 7 - Racket: Pairs, Nested Lists, Vectors](#week-7---racket-pairs-nested-lists-vectors)
+    - [Reading:](#reading-5)
+    - [Notes:](#notes-5)
+  - [Week 7 - Dynamic Prohramming](#week-7---dynamic-prohramming)
+  - [Week 8 - Racket: `struct`](#week-8---racket-struct)
+    - [Reading:](#reading-6)
+    - [Notes:](#notes-6)
+  - [Week 8 - Overview of Compilation](#week-8---overview-of-compilation)
+
 # C311 Overview
 
 ---
@@ -89,6 +121,10 @@ Optional Arguments in `lambda` Form
 [arg-id default-expr] 
 
 ---
+
+## Week 3 - First Class Objects
+
+---
 ## Week 4 - Racket: Scope & Binding
 ### Reading:
 Racket Guide w/ pics:
@@ -109,6 +145,12 @@ Lexical Scope: Global Definitions
 Assignment: set!
 
 ---
+
+
+## Week 4 - Scope Binding
+
+---
+
 ## Week 5 - Racket: Lists, Iteration, Recursion
 ### Reading:
 Racket Guide w/ pics:
@@ -172,9 +214,16 @@ Tail-Recursion Evaluation
  Tail-Call Optimization
 
 ---
-## Week 6 - Exam Week
+
+## Week 5 - Recursion
 
 ---
+
+## Week 6 - **Exam Week**
+
+---
+
+
 ## Week 7 - Racket: Pairs, Nested Lists, Vectors
 ### Reading:
 Racket Guide:
@@ -196,7 +245,10 @@ The Vector Form vs. #
 Using Vector Functions
 
 ---
-## Week 8 - Racket: struct
+## Week 7 - Dynamic Prohramming
+
+---
+## Week 8 - Racket: `struct`
 ### Reading:
 Racket Guide:
 Part 5
@@ -281,6 +333,8 @@ plus one more for the name of the instantiated type.
 It must return the same number of values as given, minus the name argument
 
 
+---
+## Week 8 - Overview of Compilation
 
 
 **Compilation Overview**
@@ -313,6 +367,7 @@ Intermediate Form
 
 Target Code Generation
 
+<<<<<<< Updated upstream
 Code Improvement (Optimization)
 
 
@@ -324,3 +379,6 @@ Code Improvement (Optimization)
 | Team 4 | 4             | Drawing a City                      | Week 15               |
 | Team 5 | 3             | Building a Simple Blog              | Week 15               |
 | Team 6 | 3             | Building a Simple Blog              | Week 15               |
+=======
+Code Improvement (Optimization)
+>>>>>>> Stashed changes
