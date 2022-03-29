@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#1C1B1A",
+			"titleBar.activeBackground": "#1C1B1A",
+			"titleBar.activeForeground": "#F5FEE0",
+			"favorites.sortDirection": "DESC",
+			"workbench.colorCustomizations": {
+				"activityBar.background": "#411A60",
+				"titleBar.activeBackground": "#5A2486",
+				"titleBar.activeForeground": "#FDFCFE"
+			}
+		},
+		"calendar.google.credentialsFile": "C:\\Users\\sroma\\source\\repos\\projects\\credentials.json",
+		"todoist.projectId": "2186180109",
+		"java.project.sourcePaths": [
+			"c307/hw5"
+		]
+	}
+	}
