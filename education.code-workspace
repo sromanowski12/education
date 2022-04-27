@@ -59,7 +59,8 @@
 		"code-runner.executorMap": {
 			"racket": "racket"
 	
-		}
+		},
+		"docker.host": ""
 		
 	}
 	}
