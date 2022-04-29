@@ -46,10 +46,10 @@
 		"azdoPullRequests.projectName": "EQ",
 		"markdown.extension.print.theme": "dark",
 		"editor.acceptSuggestionOnCommitCharacter": false,
-		"azure-work-management.personal-access-token": "naiox4xvjmvtkz2up265ev2ehafncbdp5f7gqgrdcbbyh5e43iaq",
+		"azure-work-management.personal-access-token": "lpnm7focbh5iueviivp2qdahsblym4bu6wrskwuk3tggmzqwvlzq",
 		"azure-work-management.project": "Enterprise Quoting",
 		"azure-work-management.team": "Enterprise Quoting Team",
-		"azure-work-management.iteration": "Enterprise Quoting\\CPQ_2022_3",
+		"azure-work-management.iteration": "Enterprise Quoting\\CPQ_2022_9",
 		"azure-work-management.organization": "SCPTechnicalServices",
 		"markdown.preview.linkify": false,
 		"markdown.preview.openMarkdownLinks": "inEditor",
@@ -60,7 +60,12 @@
 			"racket": "racket"
 	
 		},
-		"docker.host": ""
+		"docker.host": "",
+		"planner.azure-devops.default.area": "Enterprise Quoting",
+		"planner.azure-devops.organization": "SCPTechnicalServices",
+		"planner.azure-devops.project": "Enterprise Quoting",
+		"planner.azure-devops.team": "Enterprise Quoting Team",
+		"planner.azure-devops.token": "lpnm7focbh5iueviivp2qdahsblym4bu6wrskwuk3tggmzqwvlzq"
 		
 	}
 	}
