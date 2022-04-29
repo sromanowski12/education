@@ -41,5 +41,39 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "UkoH3QqYBun1APlw"
+    },
+    {
+        "type": "Group",
+        "name": "C311",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "uly7PeNHpmfDBt3o"
+    },
+    {
+        "type": "Group",
+        "name": "Racket",
+        "parent_id": "uly7PeNHpmfDBt3o",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "QukCT8foKqyEgdYN"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c311\\2022-23\\README.md",
+        "parent_id": null,
+        "fsPath": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c311\\2022-23\\README.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "df8u6Co4HZ95L32n"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c311\\2022-23\\README.md",
+        "parent_id": "uly7PeNHpmfDBt3o",
+        "fsPath": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c311\\2022-23\\README.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "7U4FJgWs5RSrCBeK"
     }
 ]
