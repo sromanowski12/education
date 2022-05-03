@@ -36,3 +36,28 @@
     
 
 ## Regular Expressions
+
+`(regexp ...)`
+`(regexp? ...)`
+`(regexp-match ...)`
+`(regexp-match-positions ...)`
+`(regexp-match-positions-all ...)`
+
+
+## `struct`
+
+(struct ...)
+
+(struct? ...)
+(struct-ref ...)
+(struct-set! ...)
+(struct-copy ...)
+(struct-keys ...)
+(struct-values ...)
+(struct-pairs ...)
+(struct-map ...)
+(struct-map! ...)
+(struct-map-values ...)
+(struct-map-values! ...)
+(struct-map-keys ...)
+(struct-map-keys! ...)
