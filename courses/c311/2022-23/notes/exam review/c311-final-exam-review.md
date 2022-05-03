@@ -8,6 +8,54 @@
 - The Racket Guide
   - 2.3 - Lists, Iteration, and Recursion
 
+#### `list` Function
+```racket
+(list "red" "green" "blue")
+
+```
+
+
+#### `map` Function
+```racket
+> (map (lambda (x) (* x 2))
+       (list 2 4 6 8))
+'(4 8 12 16)
+
+> (map sqrt (list 1 4 9 16))
+'(1 2 3 4)
+
+> (map (lambda (i)
+         (string-append i "!"))
+       (list "peanuts" "popcorn" "crackerjack"))
+'("peanuts!" "popcorn!" "crackerjack!")
+
+
+```
+
+#### `apply` Function
+The apply function offers a way around this restriction. It takes a function and a list argument, and it applies the function to the values in the list:
+```racket
+> (apply + '(1 2 3))
+6
+
+> (apply + 1 2 '(3))
+6
+
+> (apply + '())
+0
+
+> (apply sort (list (list '(2) '(1)) <) #:key car)
+'((1) (2))
+
+(define (avg lst)
+  (/ (apply + lst) (length lst)))
+ 
+
+> (avg '(1 2 3))
+2
+```
+
+
 ## Week 7 - Racket: Pairs, Nested Lists, and Vectors
 ### Reading
 - The Racket Guide
