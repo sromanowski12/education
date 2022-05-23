@@ -25,3 +25,7 @@ Identify appropriate visual literacy vocabulary/terminology as it relates to cou
   * *Late assignments will not count for credit, unless special circumstances are explained and approved, but I am always happy to review for feedback as time allows.
 * e-News Writing (20%)         
 * Website Project and Evaluation (50%) 
+
+---
+
+[Return to W315 home page](/courses/w315/README.md)

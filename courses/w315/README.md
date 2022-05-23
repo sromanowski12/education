@@ -2,9 +2,13 @@
 
 ---
 
+**Links**
+
 **[Course Schedule](/courses/w315/w315-course-schedule.md)**
 
 **[Course Syllabus](/courses/w315/w315-syllabus.md)**
+
+---
 
 **CONTACT INFORMATION**:  
 
@@ -17,6 +21,7 @@ Work Phone:
 (574) 520-4360
 
 E-Mail: sfnichol@iusb.edu
+
 *Instructor will respond to all messages within*
 
 **COURSE DESCRIPTION**: 
