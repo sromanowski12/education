@@ -3,6 +3,8 @@
 
 [Canvas - Syllabus](https://iu.instructure.com/courses/2074703/assignments/syllabus)
 
+--- 
+
 **COURSE GOALS**: This course will help you to identify some core elements of professional writing and teach you strategies for producing effective writing in a web-based setting. In particular, we will focus on the following:
 
 **Professional Writing Skills**: This course will increase your clarity and conciseness in writing, as well as teach you how to present yourself in a professional manner to potential employers and shape your professional image. For all writings, this will include problem solving and establishing and developing a strong argument.
