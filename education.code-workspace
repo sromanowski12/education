@@ -5,22 +5,23 @@
 		}
 	],
 	"settings": {
-		"workbench.colorCustomizations": {
-			"activityBar.background": "#1C1B1A",
-			"titleBar.activeBackground": "#1C1B1A",
-			"titleBar.activeForeground": "#F5FEE0",
-			"favorites.sortDirection": "DESC",
-			"workbench.colorCustomizations": {
-				"activityBar.background": "#411A60",
-				"titleBar.activeBackground": "#5A2486",
-				"titleBar.activeForeground": "#FDFCFE"
-			}
-		},
+		// "workbench.colorCustomizations": {
+		// 	"activityBar.background": "#1C1B1A",
+		// 	"titleBar.activeBackground": "#1C1B1A",
+		// 	"titleBar.activeForeground": "#F5FEE0",
+		// 	"favorites.sortDirection": "DESC",
+		// 	"workbench.colorCustomizations": {
+		// 		"activityBar.background": "#411A60",
+		// 		"titleBar.activeBackground": "#5A2486",
+		// 		"titleBar.activeForeground": "#FDFCFE"
+		// 	}
+		// },
 		"calendar.google.credentialsFile": "C:\\Users\\sroma\\source\\repos\\projects\\credentials.json",
 		"todoist.projectId": "2186180109",
 		"java.project.sourcePaths": [
 			"c307/hw5"
 		],
+<<<<<<< Updated upstream
 		"toggl.apiKey": "715540d205fe56445dd6f40edb1b0907",
 		"sqltools.connections": [
 			{
@@ -67,5 +68,8 @@
 		"planner.azure-devops.team": "Enterprise Quoting Team",
 		"planner.azure-devops.token": "lpnm7focbh5iueviivp2qdahsblym4bu6wrskwuk3tggmzqwvlzq"
 		
+=======
+		"toggl.apiKey": "715540d205fe56445dd6f40edb1b0907"
+>>>>>>> Stashed changes
 	}
 	}

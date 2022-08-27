@@ -1,4 +1,7 @@
 {
+<<<<<<< Updated upstream
     "cmake.configureOnOpen": true,
     "markdown.extension.print.theme": "dark"
+=======
+>>>>>>> Stashed changes
 }
