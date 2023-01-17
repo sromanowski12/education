@@ -20,6 +20,21 @@
 		"todoist.projectId": "2186180109",
 		"java.project.sourcePaths": [
 			"c307/hw5"
+		],
+		"sqltools.connections": [
+			{
+				"mysqlOptions": {
+					"authProtocol": "default"
+				},
+				"previewLimit": 50,
+				"server": "infoi450-ce5a042c5e6c4f7ba1221927288502c8-dbserver.mysql.database.azure.com",
+				"port": 3306,
+				"driver": "MySQL",
+				"name": "i450",
+				"database": "infoi450_ce5a042c5e6c4f7ba1221927288502c8_database",
+				"username": "bkvauwhwvh@infoi450-ce5a042c5e6c4f7ba1221927288502c8-dbserver",
+				"password": "Team7Project"
+			}
 		]
 	}
 	}
