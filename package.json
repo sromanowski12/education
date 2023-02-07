@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "hyperformula": "^1.2.0"
+    "hyperformula": "^1.2.0",
+    "make": "^0.8.1"
   }
 }
