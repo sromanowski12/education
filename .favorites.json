@@ -75,5 +75,123 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "7U4FJgWs5RSrCBeK"
+    },
+    {
+        "type": "Group",
+        "name": "C435",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "UMo14f5yTd6YkItL"
+    },
+    {
+        "type": "Group",
+        "name": "MINIX3",
+        "parent_id": "UMo14f5yTd6YkItL",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "DERs5wVr2FbuhYo0"
+    },
+    {
+        "type": "Group",
+        "name": "Source Code",
+        "parent_id": "DERs5wVr2FbuhYo0",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "qJB9h0AdlX3Io8uL"
+    },
+    {
+        "type": "Group",
+        "name": "pm",
+        "parent_id": "qJB9h0AdlX3Io8uL",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "R6nDOTre501x4lGQ"
+    },
+    {
+        "type": "Group",
+        "name": "is",
+        "parent_id": "qJB9h0AdlX3Io8uL",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "mtVsDqrofMYZzNgn"
+    },
+    {
+        "type": "Group",
+        "name": "rs",
+        "parent_id": "qJB9h0AdlX3Io8uL",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "f7BvrpO6Yx1D2F3s"
+    },
+    {
+        "type": "Group",
+        "name": "fs",
+        "parent_id": "qJB9h0AdlX3Io8uL",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "LPApiYZMK9Bohuks"
+    },
+    {
+        "type": "Group",
+        "name": "kernel",
+        "parent_id": "qJB9h0AdlX3Io8uL",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "FVtKcdhAIebgaX2Q"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\system.c",
+        "parent_id": "FVtKcdhAIebgaX2Q",
+        "fsPath": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\system.c",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "sykSvflWdw1FXHR9"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\system.h",
+        "parent_id": "FVtKcdhAIebgaX2Q",
+        "fsPath": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\system.h",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "wA6sUYRkbQerqXv5"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\interrupt.c",
+        "parent_id": "FVtKcdhAIebgaX2Q",
+        "fsPath": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\interrupt.c",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "4Jlkbfc9q0RKdu2P"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\proc.h",
+        "parent_id": "FVtKcdhAIebgaX2Q",
+        "fsPath": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\proc.h",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "fbtHS0Xlar7YpWQu"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\proc.c",
+        "parent_id": "FVtKcdhAIebgaX2Q",
+        "fsPath": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\proc.c",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "hmetLIW5gbYNRMn7"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\start.c",
+        "parent_id": "FVtKcdhAIebgaX2Q",
+        "fsPath": "c:\\Users\\sromanowski\\source\\repos\\education\\courses\\c435\\minix3\\minix3-master\\kernel\\start.c",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "VkBQfgIXdMyANtCE"
     }
 ]
