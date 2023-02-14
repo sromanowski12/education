@@ -1,6 +1,40 @@
 ## usr/src/boot
 
+## usr/include/
+## usr/include/minix
+
+
 ## usr/src/kernel
+### **debug.c**
+### **debug.h**  
+### **ipc.h**
+### **interrupt.c**  
+### **kernel.h**
+### **main.c** 
+#### Functions
+- main()
+
+```c
+announce();				/* print MINIX startup banner */
+/* Warnings for sanity checks that take time. These warnings are printed
+ * so it's a clear warning no full release should be done with them
+ * enabled.
+ */
+#if DEBUG_SCHED_CHECK
+  FIXME("DEBUG_SCHED_CHECK enabled");
+#endif
+#if DEBUG_VMASSERT
+  FIXME("DEBUG_VMASSERT enabled");
+#endif
+#if DEBUG_PROC_CHECK
+  FIXME("PROC check enabled");
+#endif
+  restart();
+```
+
+- announce(): Display the MINIX startup banner.
+- prepare_shutdown(): This function prepares to shutdown MINIX.
+- shutdown(): This function is called from prepare_shutdown or stop_sequence to bring down MINIX. How to shutdown is in the argument: RBT_HALT (return to the monitor), RBT_MONITOR (execute given code), RBT_RESET (hard reset). 
 
 ### **proc.c** 
 contains essentially all of the process and message handling. Together with "mpx.s" it forms the lowest layer of the MINIX kernel.
@@ -19,6 +53,10 @@ declaration of the process table
 - Many assembly code routines reference fields in it. 
   - The offsets to these fields are defined in the assembler include file **sconst.h**. 
   - When changing struct proc, be sure to change **sconst.h** to match.
+
+## **start.c**
+First C file used by the kernel. 
+## **table.c**
 
 ## usr/src/include
 ## usr/src/include/minix
@@ -160,3 +198,14 @@ You can search for the function keys by searching for the key names or the corre
 It's worth noting that the specific names and implementations of the function keys may vary depending on the version of MINIX you're using. In some cases, the function keys may be implemented in the system's console driver, while in others they may be implemented in the system's terminal emulator. To find the specific implementation, you may need to search through the source code of the relevant components, such as the "console.c" or "term.c" files.
 
 In summary, to locate the function keys in MINIX source code, you can use a text editor or code search tool to search for the key names or corresponding function calls in the source code. The specific names and implementations may vary, so you may need to search through multiple files to find the relevant code.
+
+
+## kernel - debug, function
+
+Minix, as an operating system, implements a text-based user interface that relies on text mode display to provide feedback and receive inputs from users. When a function key is pressed, Minix can respond by updating the screen with information that corresponds to the function of the key.
+
+For example, when the user presses the F1 key, Minix might display a help screen that provides information on the available commands and their usage. When the F2 key is pressed, Minix might display information about the system status, such as the memory usage or CPU utilization.
+
+The way Minix updates the screen and displays information when a function key is pressed depends on the implementation of the operating system. Minix uses system calls to access the video display hardware and update the screen with new information. The specific system calls used, and the way they are used, will vary depending on the architecture and implementation of Minix.
+
+In general, Minix displays information in the kernel when a function key is pressed by writing to the text-mode video buffer and updating the screen with the new information. The exact details of how this is done will depend on the specific implementation of Minix and the architecture it is running on.****

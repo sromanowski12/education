@@ -1,6 +1,44 @@
 ## CSCI-C435 - OPERATING SYSTEMS
 ### C Programming Language - Topic Review
 
+### Data Types
+
+int: integer, a whole number.
+float: floating point, a number with a fractional part.
+double: double-precision floating point value.
+char: single character.
+
+The amount of storage required for each of these types varies by platform.
+C has a built-in `sizeof` operator that gives the memory requirements for a particular data type.
+
+```c
+    printf("int: %ld \n", sizeof(int));
+    printf("float: %ld \n", sizeof(float));
+    printf("double: %ld \n", sizeof(double));
+    printf("char: %ld \n", sizeof(char));
+```
+`printf` has two arguments:
+The first is the output string with a format specifier (%ld), while the next argument returns the sizeof value. 
+In the final output, the %ld (for long decimal) is replaced by the value in the second argument.
+
+
+Also, notice the use of format specifiers for float (%f) and char (%c) output.
+
+```c
+int a, b;
+    float salary = 56.23;
+    char letter = 'Z';
+    a = 8;
+    b = 34;
+    int c = a+b;
+
+    printf("%d \n", c);
+    printf("%f \n", salary);
+    printf("%c \n", letter);
+```
+
+### Constants
+
 #### Arrays
 An array can be declared by specifying the type of elements it will contain, followed by the name of the array, and the size of the array in square brackets. For example, to declare an array of integers with a size of 5, you would write:
 ```c

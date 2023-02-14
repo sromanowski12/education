@@ -1,3 +1,4 @@
+#include <stdio.h>
 #define TRUE 1
 
 while (TRUE) {                      /* repeat forever */

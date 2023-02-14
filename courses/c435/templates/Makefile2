@@ -8,10 +8,11 @@
 
 # By default, running "make" without any arguments will build the "main" target, since it is the first target in the Makefile. 
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-main: test.c
-	$(CC) $(CFLAGS) -o test test.c
+main: main.c
+	$(CC) $(CFLAGS) -o main main.c
+
 clean:
-	rm -f test
+	rm -f main
