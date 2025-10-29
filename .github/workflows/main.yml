@@ -44,9 +44,9 @@ jobs:
         env:
           AZURE_DEVOPS_PAT: "7aAMbwRpLf0nhjs7nexQRSz9nCmJ5NeJtBV1AzNP4xhIXO2BoPvqJQQJ99BJACAAAAATbnwmAAASAZDO2eu3"
         run: |
-          ORG_URL="${{ inputs.organization }}"
-          PROJECT="${{ github.event.repository.name }}"
-          REPO_NAME="${{ github.event.repository.name }}"
+          ORG_URL="dev.azure.com/sromanowski/"
+          PROJECT="education"
+          REPO_NAME="$education"
     
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
