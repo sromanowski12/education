@@ -1,11 +1,4 @@
 name: "Sync to Azure DevOps"
-description: "Automatically create/update an Azure DevOps project & repo, then sync a GitHub repo to it."
-author: "GuyMicciche"
-branding:
-  icon: "git-merge"
-  color: "blue"
-  
-
 on: [push]
 jobs:
   update-readme:
