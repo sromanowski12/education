@@ -46,7 +46,7 @@ jobs:
         run: |
           ORG_URL="dev.azure.com/sromanowski/"
           PROJECT="education"
-          REPO_NAME="$education"
+          REPO_NAME="education"
     
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
