@@ -1,4 +1,7 @@
 # **Education**
+
+General Information:
+
 - **Courses**
 
 ## **[AST-A100](/a100)**
