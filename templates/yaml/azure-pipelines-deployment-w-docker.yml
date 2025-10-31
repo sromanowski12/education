@@ -1,0 +1,33 @@
+# This defines the API version and the kind of Kubernetes resource we are creating.
+# 'apps/v1' is the API version, and 'Deployment' is the resource type.
+apiVersion: apps/v1
+kind: Deployment
+
+# Metadata contains information to identify the resource uniquely.
+# 'name' specifies the name of the Deployment.
+metadata:
+  name: my-app  # Name of the Deployment, used for identification.
+
+# "spec" specifies the intended deployment state.
+spec:
+  # Number of replicas/pods we want for this Deployment.
+  replicas: 3  # Ensures high availability by running three app replicas.
+
+  # Selector is used to define the labels that this Deployment will manage.
+  selector:
+    matchLabels:
+      app: my-app  # This ensures that only Pods with the label 'app: my-app' are managed by this Deployment.
+
+  # Template specifies the blueprint for the pods created by the Deployment.
+  template:
+    metadata:
+      labels:
+        app: my-app  # Labels for the Pods, matching the selector above.
+
+    # A specification for the containers of the Pods.
+    spec:
+      containers:
+      - name: my-app  # Name of the container. This is useful for linking to the container in logs, etc.
+        image: mycontainerregistry.azurecr.io/my-app:latest  # Pull the container image you will call from your container registry.
+        ports:
+        - containerPort: 80  # The container listens on port 80.

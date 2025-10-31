@@ -1,0 +1,8 @@
+- script: |
+    npm test
+  displayName: 'Run unit tests with Jest'
+
+  - task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '**/test-results.xml'
+    testRunTitle: 'Unit Tests'

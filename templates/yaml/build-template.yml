@@ -1,0 +1,13 @@
+# Here we configure the platform and the build configuration.
+parameters:
+  buildPlatform: 'Any CPU'  # This specifies the build platform (e.g., Any CPU, x86, x64).
+  buildConfiguration: 'Release'  # This specifies the build configuration (Release) to avoid warning.
+
+# A pipeline is composed of steps (a series of tasks that will be executed)
+steps:
+- task: DotNetCoreCLI@2  # Task for running .NET Core commands in the pipeline.
+  inputs:
+    command: 'build'  # This runs the 'build' command to compile the project(s).
+    projects: '**/*.csproj'  # This specifies to build all .csproj files in the repository.
+    arguments: '--configuration ${{ parameters.buildConfiguration }}'
+    # This passes the build configuration parameter (e.g., Release or Debug) to the command.

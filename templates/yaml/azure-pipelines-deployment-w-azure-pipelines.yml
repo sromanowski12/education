@@ -1,0 +1,17 @@
+# This defines a task for deploying Kubernetes manifests within an Azure DevOps pipeline.
+- task: KubernetesManifest@0  # Task type for working with Kubernetes manifest files.
+  inputs:
+    # This configures what to do with the Kubernetes manifest files.
+    action: 'deploy'  # 'deploy' action ensures the Kubernetes manifests are applied to the cluster.
+
+    # This defines the namespace where the Kubernetes resources will be deployed.
+    namespace: 'default'  # 'default' is the namespace for deploying resources. Change if needed.
+
+    # All this does is point to the manifest files that define the desired state of your Kubernetes resources.
+    manifests: '$(Build.ArtifactStagingDirectory)/manifests/*.yaml'
+    # The 'manifests' variable points to the location of all the YAML files (e.g., Deployment, Service, etc.) that will be applied during the deployment.
+
+    # To access private container registry images, use the image pull secret.
+    imagePullSecrets: 'my-registry-secret'
+    # This instructs Kubernetes on which secret to use when pulling images from a private container registry.
+    # Ensure that 'my-registry-secret' exists in the namespace before the deploy

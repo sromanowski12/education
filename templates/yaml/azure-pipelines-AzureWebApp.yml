@@ -1,0 +1,9 @@
+# Define the task for deploying to an Azure Web App
+- task: AzureWebApp@1
+  inputs:
+    # This specifies your Azure subscription service connection
+    azureSubscription: 'your-azure-subscription'
+    # This specifies the name of your web app
+    appName: 'your-app-name'
+    # This specifies the location of the app package or files to be deployed
+    package: '$(Build.ArtifactStagingDirectory)'

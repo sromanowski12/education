@@ -1,0 +1,23 @@
+# This task is used to cache files to speed up your pipeline.
+- task: Cache@2  # This is the task name for caching files in Azure Pipelines.
+  inputs:
+    # Key is used to identify the cache. It combines npm (package manager), operating system (OS), and package-lock.json files.
+    key: 'npm | "$(Agent.OS)" | package-lock.json'
+
+
+
+    # RestoreKeys is an optional value used when the specific cache key is not found. It helps to find a fallback cache.
+    restoreKeys: |
+      npm | "$(Agent.OS)"
+
+
+
+    # Path defines the location of files or folders to be cached.
+    # Here, we are caching the 'node_modules' directory to avoid reinstalling dependencies.
+    path: '$(Build.SourcesDirectory)/node_modules'
+
+
+
+    # CacheHitVar is a variable that stores whether the cache was successfully used (restored).
+    # This can be checked later in the pipeline to decide if tasks need to run.
+    cacheHitVar: 'NPM_CACHE_RESTORED'

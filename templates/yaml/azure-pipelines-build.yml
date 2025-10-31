@@ -1,0 +1,7 @@
+# A pipeline job is a group of tasks. Here, the job is named 'Build'.
+jobs:
+- job: Build  # The job name where the build process occurs.
+
+  # Steps define the tasks or actions the pipeline will perform.
+  steps:
+  - template: templates/build-template.yml  # Reference an external YAML template for reusable steps.
