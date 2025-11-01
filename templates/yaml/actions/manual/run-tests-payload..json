@@ -1,0 +1,6 @@
+{
+  "event_type": "run-tests",
+  "client_payload": {
+    "env": "staging"
+  }
+}

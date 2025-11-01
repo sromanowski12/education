@@ -1,0 +1,7 @@
+on:
+  schedule:
+    - cron:  '*/15 * * * *'
+
+on:
+  schedule:
+    - cron:  '0 3 * * SUN'
