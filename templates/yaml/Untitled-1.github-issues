@@ -1,0 +1,7 @@
+[
+  {
+    "kind": 2,
+    "language": "github-issues",
+    "value": "# This section defines the trigger(s) for the pipeline.\r\n# 'main' specifies that the pipeline will run whenever changes are pushed to the 'main' branch.\r\ntrigger:\r\n- main  # automatically triggers this pipeline when changes are made to the 'main' branch.\r\n\r\n# This defines the pool where the pipeline will run.\r\n# 'ubuntu-latest' specifies the virtual machine image for executing tasks.\r\npool:\r\n  vmImage: 'ubuntu-latest'  # This uses the latest Ubuntu image provided by Azure DevOps.\r\n\r\n# Steps contain the individual tasks or actions that the pipeline will execute.\r\nsteps:\r\n- script: echo Hello, world!  # A script task to run shell commands. This one prints \"Hello, world!\".\r\n  displayName: 'Run my first pipeline script'  # A friendly name for this step, making it easier to identify in the pipeline logs."
+  }
+]

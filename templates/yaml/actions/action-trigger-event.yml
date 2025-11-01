@@ -1,0 +1,2 @@
+-name: Show event trigger
+  run: echo "Triggered by ${{ github.event_name }}"
