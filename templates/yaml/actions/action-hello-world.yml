@@ -1,0 +1,25 @@
+name: 1.0$(Rev:.r)
+
+# simplified trigger (implied branch)
+trigger:
+
+- main
+
+# equivalents trigger
+# trigger:
+#  branches:
+#    include:
+#    - main
+
+variables:
+  name: John
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+
+- job: helloworld
+  steps:
+    - checkout: self
+    - script: echo "Hello, $(name)"

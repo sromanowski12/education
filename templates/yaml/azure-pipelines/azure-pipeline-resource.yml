@@ -1,0 +1,10 @@
+resources:
+  repositories:
+
+  - repository: appcode
+    type: git
+    name: otherRepo
+
+steps:
+
+- checkout: appcode

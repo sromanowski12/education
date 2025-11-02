@@ -1,0 +1,12 @@
+jobs:
+- job: InitialJob
+  steps:
+  - script: echo hello from initial job
+- job: SubsequentA
+  dependsOn: InitialJob
+  steps:
+  - script: echo hello from subsequent A
+- job: SubsequentB
+  dependsOn: InitialJob
+  steps:
+  - script: echo hello from subsequent B
